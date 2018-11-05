@@ -1,0 +1,123 @@
+.text-content {
+  border-bottom: 2px solid blue;
+}
+
+.viewport-height {
+  height: 100vh;
+  border-bottom: 5px solid red;
+}
+
+.border-green {
+  border-bottom: 1px solid green;
+}
+
+.video-container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  .content {
+    z-index: 6;
+    position: absolute;
+    width: 100%;
+    max-width: 500px;
+    left: 0;
+    top: 40%;
+    .text {
+      font-size: 2em;
+      color: #ffa500;
+      text-align: center;
+      width: 100%;
+    }
+    button {
+      margin: 20px auto;
+      background-color: #847979;
+      box-sizing: border-box;
+      display: block;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      color: #d61b1b;
+      text-align: center;
+      padding-left: 15px;
+      padding-bottom: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      outline: none;
+      border: 2px solid #fff;
+      transition: all 0.3s ease;
+    }
+    .btnmodal:hover {
+      background-color: #c2bebe;
+      box-shadow: 0px 0px 10px rgba(245, 245, 245, 5);
+    }
+  }
+  .video {
+    position: relative;
+    height: 100%;
+    width: 500%;
+    margin-left: - 250%;
+
+    .hover {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 5;
+      background-color: rgba(0, 0, 0, .5);
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+//Modal
+.modal-video {
+  background-color: rgba(0, 0, 0, .95);
+}
+
+.sub-sub-content {
+  position: relative;
+  background-color: white;
+  padding-bottom: 20px;
+  margin-bottom: 150px;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 150px;
+  background-color: grey;
+  color: white;
+  z-index: -1;
+  .logo,
+  .text {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    width: 100px;
+
+    img {
+      width: 100%;
+    }
+  }
+  .text {
+    width: calc(calc(100% - 100px) / 2);
+  }
+}
+

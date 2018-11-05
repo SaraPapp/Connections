@@ -1,0 +1,24 @@
+@import '../external/modal-video-master/scss/modal-video';
+@import '../external/slick-1.8.1/slick/slick';
+
+
+* {
+  box-sizing: border-box;
+}
+
+// variables
+$fontfamily-poppins: 'Poppins', sans-serif;
+$fontfamily-hind: 'Hind', sans-serif;
+$button-hover-brown: #bea26c;
+
+
+.col-12 {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+@import 'twosections';
+@import 'video';
+@import 'textvideo';
+@import 'carousel';

@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.text-container {
+  height: 60vh;
+  text-align: center;
+
+  .title-text h2 {
+    font-family: $fontfamily-poppins;
+    max-width: 1081px;
+    width: 100%;
+    height: auto;
+    font-size: 4em;
+    line-height: 1.19;
+    letter-spacing: -0.9px;
+    margin: 290px auto 20px auto;
+  }
+  .sub-text {
+    font-family: $fontfamily-poppins;
+    margin-bottom: 40px;
+    max-width: 863px;
+    width: 100%;
+    height: auto;
+    font-size: 1.375em;
+    font-weight: 300;
+    line-height: 1.73;
+    color: #6e6e6e;
+  }
+}
