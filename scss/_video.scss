@@ -1,23 +1,86 @@
-.header {
+
+header {
+  width: 100%;
   position: absolute;
-  top: 20px;
+  top: 26px;
   z-index: 6;
   display: block;
-  .connections-logo {
-    display: inline-block;
-  }
-  .login {
-    display: inline-block;
-    width: 210px;
-    height: 40px;
-    border-radius: 20px;
-    border: solid 0.5px #ffffff;
-    p {
-      font-family: Poppins;
-      font-size: 0.875em;
-      font-weight: 600;
-      text-align: center;
-      color: #ffffff;
+  .header {
+    .connections-logo {
+      display: inline-block;
+      width: 197px;
+      margin-left: calc(50% - 200px);
+      img {
+        width: 100%;
+      }
+    }
+    .menu-right {
+      float: right;
+      .login {
+        position: relative;
+        display: block;
+        float: left;
+        width: 210px;
+        height: 40px;
+        border-radius: 20px;
+        border: solid 0.5px rgba(255, 255, 255, .5);
+        margin-right: 60px;
+        a {
+          text-decoration: none;
+          display: inline-block;
+          font-family: $fontfamily-poppins;
+          font-size: 0.875em;
+          font-weight: 600;
+          text-align: center;
+          line-height: 39px;
+          color: #ffffff;
+          &.login-text {
+            padding: 0 16px 0 20px;
+            border-right: 1px solid rgba(255, 255, 255, .5);
+          }
+          &.apply {
+            padding-left: 17px;
+          }
+        }
+      }
+      // Menu icon
+      .menu {
+        padding-top: 9px;
+        display: block;
+        float: left;
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+        svg#menu-icon {
+          width: 30px;
+        }
+        svg#menu-icon #top,
+        svg#menu-icon #middle,
+        svg#menu-icon #bottom {
+          transition: 0.25s ease;
+        }
+        #menu-icon:hover #middle {
+          transform: scale(2, 1);
+        }
+        #menu-icon:hover #bottom {
+          transform: scale(2, 1);
+        }
+        #menu-icon:active #top,
+        #menu-icon:active #middle,
+        #menu-icon:active #bottom {
+          transform: scale(0, 1);
+          transition-timing-function: cubic-bezier(2s, 0, 0.25, 1);
+
+          stroke-linecap: round;
+        }
+        #menu-icon line {
+          stroke: #fff;
+          stroke-width: 2;
+          stroke-linecap: round;
+        }
+      }
     }
   }
 }
@@ -34,7 +97,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-
 
   .content {
     text-align: center;

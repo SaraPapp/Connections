@@ -227,25 +227,72 @@ body {
     margin: 0;
     padding-top: 100px; }
 
-.header {
+header {
+  width: 100%;
   position: absolute;
-  top: 20px;
+  top: 26px;
   z-index: 6;
   display: block; }
-  .header .connections-logo {
-    display: inline-block; }
-  .header .login {
+  header .header .connections-logo {
     display: inline-block;
-    width: 210px;
-    height: 40px;
-    border-radius: 20px;
-    border: solid 0.5px #ffffff; }
-    .header .login p {
-      font-family: Poppins;
-      font-size: 0.875em;
-      font-weight: 600;
-      text-align: center;
-      color: #ffffff; }
+    width: 197px;
+    margin-left: calc(50% - 200px); }
+    header .header .connections-logo img {
+      width: 100%; }
+  header .header .menu-right {
+    float: right; }
+    header .header .menu-right .login {
+      position: relative;
+      display: block;
+      float: left;
+      width: 210px;
+      height: 40px;
+      border-radius: 20px;
+      border: solid 0.5px rgba(255, 255, 255, 0.5);
+      margin-right: 60px; }
+      header .header .menu-right .login a {
+        text-decoration: none;
+        display: inline-block;
+        font-family: "Poppins", sans-serif;
+        font-size: 0.875em;
+        font-weight: 600;
+        text-align: center;
+        line-height: 39px;
+        color: #ffffff; }
+        header .header .menu-right .login a.login-text {
+          padding: 0 16px 0 20px;
+          border-right: 1px solid rgba(255, 255, 255, 0.5); }
+        header .header .menu-right .login a.apply {
+          padding-left: 17px; }
+    header .header .menu-right .menu {
+      padding-top: 9px;
+      display: block;
+      float: left;
+      -moz-transform: scale(-1, 1);
+      -webkit-transform: scale(-1, 1);
+      -o-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+      transform: scale(-1, 1); }
+      header .header .menu-right .menu svg#menu-icon {
+        width: 30px; }
+      header .header .menu-right .menu svg#menu-icon #top,
+      header .header .menu-right .menu svg#menu-icon #middle,
+      header .header .menu-right .menu svg#menu-icon #bottom {
+        transition: 0.25s ease; }
+      header .header .menu-right .menu #menu-icon:hover #middle {
+        transform: scale(2, 1); }
+      header .header .menu-right .menu #menu-icon:hover #bottom {
+        transform: scale(2, 1); }
+      header .header .menu-right .menu #menu-icon:active #top,
+      header .header .menu-right .menu #menu-icon:active #middle,
+      header .header .menu-right .menu #menu-icon:active #bottom {
+        transform: scale(0, 1);
+        transition-timing-function: cubic-bezier(2s, 0, 0.25, 1);
+        stroke-linecap: round; }
+      header .header .menu-right .menu #menu-icon line {
+        stroke: #fff;
+        stroke-width: 2;
+        stroke-linecap: round; }
 
 .viewport-height {
   height: 100vh; }
