@@ -14,6 +14,7 @@ $(document).ready(function () {
         //autoplay: true,
         autoplaySpeed: 2000,
         speed: 300,
+        arrows: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         pauseOnHover: true,

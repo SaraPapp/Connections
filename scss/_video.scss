@@ -1,66 +1,182 @@
-.text-content {
-  border-bottom: 2px solid blue;
+.header {
+  position: absolute;
+  top: 20px;
+  z-index: 6;
+  display: block;
+  .connections-logo {
+    display: inline-block;
+  }
+  .login {
+    display: inline-block;
+    width: 210px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 0.5px #ffffff;
+    p {
+      font-family: Poppins;
+      font-size: 0.875em;
+      font-weight: 600;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
 }
 
 .viewport-height {
   height: 100vh;
-  border-bottom: 5px solid red;
-}
-
-.border-green {
-  border-bottom: 1px solid green;
 }
 
 .video-container {
   position: relative;
   margin: 0 auto;
   width: 100%;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg');
+  background-image: url('../img/hero-banner@2x.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
 
+
   .content {
+    text-align: center;
     z-index: 6;
     position: absolute;
     width: 100%;
-    max-width: 500px;
-    left: 0;
+    max-width: 1081px;
+    left: calc(50% - 540px);
     top: 40%;
     .text {
-      font-size: 2em;
-      color: #ffa500;
       text-align: center;
       width: 100%;
-    }
-    button {
-      margin: 20px auto;
-      background-color: #847979;
+      text-shadow: 0 8px 30px rgba(0, 0, 0, 0.58);
+      font-family: $fontfamily-poppins;
+      font-size: 4.5em;
+      line-height: 1.17;
+      font-weight: bold;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+      margin-bottom: 50px;
+      padding: 0 20px;
       box-sizing: border-box;
-      display: block;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      color: #d61b1b;
-      text-align: center;
-      padding-left: 15px;
-      padding-bottom: 5px;
-      text-decoration: none;
-      cursor: pointer;
-      outline: none;
-      border: 2px solid #fff;
-      transition: all 0.3s ease;
+      span {
+        font-weight: 300;
+      }
     }
-    .btnmodal:hover {
-      background-color: #c2bebe;
-      box-shadow: 0px 0px 10px rgba(245, 245, 245, 5);
+    .button-container {
+      z-index: 6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .button {
+      display: inline-block;
+      position: relative;
+    }
+    .button.is-play {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+    .button.is-play .button-outer-circle {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+    }
+    .button.is-play .button-icon {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    .has-scale-animation {
+      -webkit-animation: smallScale 3s infinite;
+      animation: smallScale 3s infinite;
+    }
+    .has-delay-short {
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+    }
+    @-webkit-keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @-webkit-keyframes triangleStroke {
+      from {
+        stroke-dashoffset: 90;
+      }
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    @keyframes triangleStroke {
+      from {
+        stroke-dashoffset: 90;
+      }
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    @-webkit-keyframes smallScale {
+      from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+      }
+      to {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        opacity: 0;
+      }
+    }
+    @keyframes smallScale {
+      from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+      }
+      to {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    .play-video {
+      max-width: 172px;
+      width: 100%;
+      height: 21px;
+      margin: 0 auto;
+      p {
+        text-shadow: 0 8px 30px rgba(0, 0, 0, 0.58);
+        font: bold 1.125em $fontfamily-poppins;
+        line-height: 1.17;
+        letter-spacing: -0.2px;
+        text-align: center;
+        color: #ffffff;
+      }
     }
   }
   .video {
     position: relative;
     height: 100%;
-    width: 500%;
-    margin-left: - 250%;
 
     .hover {
       width: 100%;
@@ -75,8 +191,8 @@
     iframe {
       position: absolute;
       top: 0;
-      left: 0;
-      width: 100%;
+      left: calc(50% - 800px);
+      width: 1600px;
       height: 100%;
     }
   }

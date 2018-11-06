@@ -5,12 +5,33 @@
 * {
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 
 // variables
 $fontfamily-poppins: 'Poppins', sans-serif;
 $fontfamily-hind: 'Hind', sans-serif;
 $button-hover-brown: #bea26c;
 
+//mixins
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .iframe-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
 
 .col-12 {
   width: 100%;

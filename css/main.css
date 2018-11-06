@@ -180,6 +180,10 @@
 * {
   box-sizing: border-box; }
 
+body {
+  margin: 0;
+  padding: 0; }
+
 .col-12 {
   width: 100%;
   max-width: 1024px;
@@ -223,61 +227,147 @@
     margin: 0;
     padding-top: 100px; }
 
-.text-content {
-  border-bottom: 2px solid blue; }
+.header {
+  position: absolute;
+  top: 20px;
+  z-index: 6;
+  display: block; }
+  .header .connections-logo {
+    display: inline-block; }
+  .header .login {
+    display: inline-block;
+    width: 210px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 0.5px #ffffff; }
+    .header .login p {
+      font-family: Poppins;
+      font-size: 0.875em;
+      font-weight: 600;
+      text-align: center;
+      color: #ffffff; }
 
 .viewport-height {
-  height: 100vh;
-  border-bottom: 5px solid red; }
-
-.border-green {
-  border-bottom: 1px solid green; }
+  height: 100vh; }
 
 .video-container {
   position: relative;
   margin: 0 auto;
   width: 100%;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg");
+  background-image: url("../img/hero-banner@2x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden; }
   .video-container .content {
+    text-align: center;
     z-index: 6;
     position: absolute;
     width: 100%;
-    max-width: 500px;
-    left: 0;
+    max-width: 1081px;
+    left: calc(50% - 540px);
     top: 40%; }
     .video-container .content .text {
-      font-size: 2em;
-      color: #ffa500;
       text-align: center;
-      width: 100%; }
-    .video-container .content button {
-      margin: 20px auto;
-      background-color: #847979;
-      box-sizing: border-box;
-      display: block;
-      width: 60px;
-      height: 60px;
+      width: 100%;
+      text-shadow: 0 8px 30px rgba(0, 0, 0, 0.58);
+      font-family: "Poppins", sans-serif;
+      font-size: 4.5em;
+      line-height: 1.17;
+      font-weight: bold;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+      margin-bottom: 50px;
+      padding: 0 20px;
+      box-sizing: border-box; }
+      .video-container .content .text span {
+        font-weight: 300; }
+    .video-container .content .button-container {
+      z-index: 6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 20px; }
+    .video-container .content .button {
+      display: inline-block;
+      position: relative; }
+    .video-container .content .button.is-play {
       border-radius: 50%;
-      color: #d61b1b;
-      text-align: center;
-      padding-left: 15px;
-      padding-bottom: 5px;
-      text-decoration: none;
-      cursor: pointer;
-      outline: none;
-      border: 2px solid #fff;
-      transition: all 0.3s ease; }
-    .video-container .content .btnmodal:hover {
-      background-color: #c2bebe;
-      box-shadow: 0px 0px 10px whitesmoke; }
+      width: 100px;
+      height: 100px; }
+    .video-container .content .button.is-play .button-outer-circle {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%; }
+    .video-container .content .button.is-play .button-icon {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+    .video-container .content .has-scale-animation {
+      -webkit-animation: smallScale 3s infinite;
+      animation: smallScale 3s infinite; }
+    .video-container .content .has-delay-short {
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s; }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-webkit-keyframes triangleStroke {
+  from {
+    stroke-dashoffset: 90; }
+  to {
+    stroke-dashoffset: 0; } }
+@keyframes triangleStroke {
+  from {
+    stroke-dashoffset: 90; }
+  to {
+    stroke-dashoffset: 0; } }
+@-webkit-keyframes smallScale {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+  to {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0; } }
+@keyframes smallScale {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+  to {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0; } }
+    .video-container .content .play-video {
+      max-width: 172px;
+      width: 100%;
+      height: 21px;
+      margin: 0 auto; }
+      .video-container .content .play-video p {
+        text-shadow: 0 8px 30px rgba(0, 0, 0, 0.58);
+        font: bold 1.125em "Poppins", sans-serif;
+        line-height: 1.17;
+        letter-spacing: -0.2px;
+        text-align: center;
+        color: #ffffff; }
   .video-container .video {
     position: relative;
-    height: 100%;
-    width: 500%;
-    margin-left: -250%; }
+    height: 100%; }
     .video-container .video .hover {
       width: 100%;
       height: 100%;
@@ -289,8 +379,8 @@
     .video-container .video iframe {
       position: absolute;
       top: 0;
-      left: 0;
-      width: 100%;
+      left: calc(50% - 800px);
+      width: 1600px;
       height: 100%; }
 
 .modal-video {
@@ -322,25 +412,20 @@
   .footer .text {
     width: calc(calc(100% - 100px) / 2); }
 
-body {
-  margin: 0;
-  padding: 0; }
-
 .text-container {
   height: 60vh;
   text-align: center; }
   .text-container .title-text h2 {
-    font-family: "Poppins", sans-serif;
+    font: bold 4em "Poppins", sans-serif;
     max-width: 1081px;
     width: 100%;
     height: auto;
-    font-size: 4em;
     line-height: 1.19;
     letter-spacing: -0.9px;
     margin: 290px auto 20px auto; }
   .text-container .sub-text {
     font-family: "Poppins", sans-serif;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
     max-width: 863px;
     width: 100%;
     height: auto;
@@ -348,6 +433,17 @@ body {
     font-weight: 300;
     line-height: 1.73;
     color: #6e6e6e; }
+  .text-container .next-button-container {
+    width: 50px;
+    height: 50px;
+    background: url("../img/button-no-text@3x.png") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    transition: all .15s; }
+  .text-container .next-button-container:hover {
+    background: url("../img/button-no-text-copy@3x.png") no-repeat;
+    background-size: cover;
+    cursor: pointer; }
 
 .carousel-container {
   margin: 20px 0;
@@ -369,9 +465,10 @@ body {
     .carousel-container .tab .text-container {
       max-width: 300px;
       position: absolute;
-      bottom: 10%;
+      bottom: 5%;
       left: 15%; }
       .carousel-container .tab .text-container .tab-title {
+        text-align: left;
         width: 260px;
         height: 80px;
         font-family: "Poppins", sans-serif;
@@ -406,7 +503,8 @@ body {
       box-shadow: 0 13px 35px 0 rgba(0, 0, 0, 0.26);
       background-color: #bea26c; }
       .carousel-container .tab .lm-button p {
-        width: 101px;
+        padding: 18px 25px;
+        width: 201px;
         height: 29px;
         font-family: "Poppins", sans-serif;
         font-size: 18px;

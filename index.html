@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Connections</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"
@@ -20,13 +20,24 @@
 </head>
 <body>
 <main>
+    <!-- Header -->
+    <header>
+        <div class="header col-12">
+            <div class="connections-logo"><img src="img/conectlogo.svg"</div>
+            <div class="login">
+                <p class="login-text">Login</p>
+                <p class="apply">Apply to Join</p>
+            </div>
+        </div>
+    </header>
+
     <div class="sub-content">
         <div class="sub-sub-content">
             <div class="video-container viewport-height">
                 <div class="video">
                     <div class="hover"></div>
-                    <div>
-                        <iframe src="//player.vimeo.com/video/16042239?background=1&color=ffffff&title=0&byline=0&portrait=0"
+                    <div class="iframe-content">
+                        <iframe src="//player.vimeo.com/video/263293970?background=1&color=ffffff&title=0&byline=0&portrait=0"
                                 frameborder="0" allowfullscreen="allowfullscreen"
                                 mozallowfullscreen="mozallowfullscreen"
                                 msallowfullscreen="msallowfullscreen"
@@ -35,15 +46,23 @@
                     </div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
                 </div>
+
                 <div class="content">
-                    <div class="text"><strong>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt
-                        mollit
-                        anim id est laborum</strong></div>
+                    <div class="text">We are the next generation of networking <span>by
+                        <br> invitation only</span></div>
+
                     <!-- Button -->
-                    <button type="button" class="video-btn js-modal-btn js-video-vimeo"
-                            data-video-id="16042239"><i class="fas fa-caret-right fa-4x"></i>
-                    </button>
+
+                    <div class="button-container"><a class="button is-play" href="#">
+                        <div class="button-outer-circle has-scale-animation"></div>
+                        <div class="button-outer-circle has-scale-animation has-delay-short"></div>
+                        <div class="button-icon is-play">
+                            <img src="img/group-26.svg">
+                            <svg height="100%" width="100%" src="img/group-26.svg">
+                            </svg>
+                        </div>
+                    </a></div>
+                    <div class="play-video"><p>Play video</p></div>
                 </div>
             </div>
 
@@ -55,17 +74,19 @@
                 <div class="sub-text"><p>Through our network, we bring together senior executives in the luxury,
                     wellbeing, adventure and meetings incentive sectors. We are the next generation of networking.</p>
                 </div>
+                <div class="next-button-container"></div>
             </div>
 
             <!-- Carousel -->
-            
+
             <section class="carousel-container viewport-height js-carousel">
                 <div class="tab"
                      style="background-image:url('img/msp-cl-291015-107@3x.jpg')">
                     <div class="shadow">
                         <div class="text-container">
                             <div class="tab-title"><h2>Personal introductions</h2></div>
-                            <div class="tab-text"><p>Our team will refer you to valuable contacts within our network</p>
+                            <div class="tab-text"><p>Our team will refer you to valuable contacts within our
+                                network</p>
                             </div>
                             <div class="line"></div>
                             <div class="lm-button"><p>Learn more</p></div>
@@ -121,7 +142,8 @@
                     <div class="section-text text-right"><p>"Sed ut perspiciatis unde omnis iste natus error sit
                         voluptatem
                         accusantium
-                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                        quasi
                         architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
                         aspernatur
                         aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
@@ -133,7 +155,8 @@
                     <div class="section-text text-left"><p>"Sed ut perspiciatis unde omnis iste natus error sit
                         voluptatem
                         accusantium
-                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                        quasi
                         architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
                         aspernatur
                         aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
