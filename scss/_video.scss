@@ -96,7 +96,6 @@ header {
   background-image: url('../img/hero-banner@2x.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
 
   .content {
     text-align: center;
@@ -296,6 +295,26 @@ header {
       animation-name: dot2;
       animation-duration: 2s;
       animation-iteration-count: infinite;
+    }
+  }
+  .vert-line {
+    z-index: 99;
+    height: 120px;
+    width: 1px;
+    display: block;
+    position: absolute;
+    bottom: -60px;
+    left: calc(50% - 2px);
+    div {
+      height: 50%;
+      display: block;
+      width: 1px;
+      &.white {
+        background-color: white;
+      }
+      &.black {
+        background-color: black;
+      }
     }
   }
 }

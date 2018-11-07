@@ -303,8 +303,7 @@ header {
   width: 100%;
   background-image: url("../img/hero-banner@2x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden; }
+  background-size: cover; }
   .video-container .content {
     text-align: center;
     z-index: 6;
@@ -466,6 +465,22 @@ header {
       animation-name: dot2;
       animation-duration: 2s;
       animation-iteration-count: infinite; }
+  .video-container .vert-line {
+    z-index: 99;
+    height: 120px;
+    width: 1px;
+    display: block;
+    position: absolute;
+    bottom: -60px;
+    left: calc(50% - 2px); }
+    .video-container .vert-line div {
+      height: 50%;
+      display: block;
+      width: 1px; }
+      .video-container .vert-line div.white {
+        background-color: white; }
+      .video-container .vert-line div.black {
+        background-color: black; }
 
 .modal-video {
   background-color: rgba(0, 0, 0, 0.95); }
