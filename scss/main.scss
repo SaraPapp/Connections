@@ -1,6 +1,13 @@
 @import '../external/modal-video-master/scss/modal-video';
 @import '../external/slick-1.8.1/slick/slick';
-
+@import 'variables';
+@import 'buttons';
+@import 'bluesection';
+@import 'footer';
+@import 'twosections';
+@import 'video';
+@import 'textvideo';
+@import 'carousel';
 
 * {
   box-sizing: border-box;
@@ -10,10 +17,6 @@ body {
   padding: 0;
 }
 
-// variables
-$fontfamily-poppins: 'Poppins', sans-serif;
-$fontfamily-hind: 'Hind', sans-serif;
-$button-hover-brown: #bea26c;
 
 //mixins
 @mixin aspect-ratio($width, $height) {
@@ -39,7 +42,3 @@ $button-hover-brown: #bea26c;
   margin: 0 auto;
 }
 
-@import 'twosections';
-@import 'video';
-@import 'textvideo';
-@import 'carousel';

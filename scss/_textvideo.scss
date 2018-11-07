@@ -1,6 +1,8 @@
 
 .text-container {
   text-align: center;
+  margin-bottom: 287px;
+  padding-top: 290px;
 
   .title-text h2 {
     font: bold 4em $fontfamily-poppins;
@@ -9,7 +11,7 @@
     height: auto;
     line-height: 1.19;
     letter-spacing: -0.9px;
-    margin: 290px auto 20px auto;
+    margin: 0 auto 20px auto;
   }
   .sub-text {
     font-family: $fontfamily-poppins;

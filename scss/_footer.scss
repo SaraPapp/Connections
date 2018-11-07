@@ -1,0 +1,29 @@
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 150px;
+  background-color: grey;
+  color: white;
+  z-index: -1;
+  .logo,
+  .text {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    width: 100px;
+
+    img {
+      width: 100%;
+    }
+  }
+  .text {
+    width: calc(calc(100% - 100px) / 2);
+  }
+}
+
+

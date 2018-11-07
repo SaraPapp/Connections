@@ -78,10 +78,14 @@ $(document).ready(function () {
     });
     // De-Focus arrows for the sliders because it affects the default arrow style
     $(".slick-arrow").click(function(e){
-        e.preventDefault();z
+        e.preventDefault();
     }).focusin(function(e){
         $(this).blur();
     });
+    //$(".tab .img-hover").each(function(){
+     //   var outer = ($(this).find('img').outerWidth() - $(this).outerWidth())/ 2;
+     //   $(this).find('img').css({'margin-left': outer * -1})
+   // });
 });
 function detectMobile(){
     if ((/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()))) {
