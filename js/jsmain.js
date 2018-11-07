@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    console.log("hello");
     $(".js-modal-btn").each(function () {
         if ($(this).hasClass("js-video-vimeo")) {
             $(this).modalVideo({channel: 'vimeo'});
@@ -50,12 +49,20 @@ $(document).ready(function () {
     $('.tab').hover (function() {
         // add class to show for 1 microsecond the div with the full height
         $(this).find('.tab-text').addClass("js-height"); // 0 -> xxx
-        var height = $(this).find('.tab-text').outerHeight(); // capture the xxx height
+        var textheight = $(this).find('.tab-text').outerHeight(); // capture the xxx height
         $(this).find('.tab-text').removeClass("js-height"); // xxx -> 0
+
+        $(this).find('.lm-button').addClass("js-height"); // 0 -> xxx
+        var buttonheight = $(this).find('.lm-button').outerHeight(); // capture the xxx height
+        $(this).find('.lm-button').removeClass("js-height"); // xxx -> 0
 
         // animate from 0 to xxx
         $(this).find('.tab-text').stop().animate({
-            'height':height,
+            'height':textheight,
+            'opacity': 1,
+        },250);
+        $(this).find('.lm-button').stop().animate({
+            'height':buttonheight,
             'opacity': 1,
         },250);
     }, function (){ // animate from 0 to xxx
@@ -63,6 +70,16 @@ $(document).ready(function () {
             'height':0,
             'opacity':0,
         },250);
+        $(this).find('.lm-button').stop().animate({
+            'height':0,
+            'opacity':0,
+        },250);
+    });
+    // De-Focus arrows for the sliders because it affects the default arrow style
+    $(".slick-arrow").click(function(e){
+        e.preventDefault();z
+    }).focusin(function(e){
+        $(this).blur();
     });
 });
 function detectMobile(){

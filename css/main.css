@@ -190,7 +190,7 @@ body {
   margin: 0 auto; }
 
 .container {
-  width: 100vw;
+  width: 100%;
   height: 700px;
   margin-bottom: 170px;
   background-color: white;
@@ -497,7 +497,6 @@ header {
     width: calc(calc(100% - 100px) / 2); }
 
 .text-container {
-  height: 60vh;
   text-align: center; }
   .text-container .title-text h2 {
     font: bold 4em "Poppins", sans-serif;
@@ -531,7 +530,7 @@ header {
 
 .carousel-container {
   margin: 20px 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh; }
   .carousel-container .tab {
     position: relative;
@@ -544,14 +543,15 @@ header {
       width: 100%;
       height: 100%;
       position: relative;
-      background-color: transparent;
-      transition: all .5s; }
+      background-color: rgba(0, 0, 0, 0.3);
+      transition: all .7s; }
     .carousel-container .tab .text-container {
       max-width: 300px;
       position: absolute;
-      bottom: 5%;
+      bottom: 20%;
       left: 15%; }
       .carousel-container .tab .text-container .tab-title {
+        position: relative;
         text-align: left;
         width: 260px;
         height: 80px;
@@ -561,10 +561,15 @@ header {
         line-height: 1.11;
         color: #ffffff;
         margin-bottom: 20px; }
+        .carousel-container .tab .text-container .tab-title h2 {
+          position: absolute;
+          bottom: 0; }
       .carousel-container .tab .text-container .tab-text,
       .carousel-container .tab .text-container .tab-title {
         color: white; }
       .carousel-container .tab .text-container .tab-text {
+        margin-bottom: 20px;
+        text-align: left;
         width: 260px;
         height: 44px;
         font-family: "Hind", sans-serif;
@@ -582,12 +587,14 @@ header {
       transition: all .25s; }
     .carousel-container .tab .lm-button {
       width: 230px;
-      height: 57px;
+      line-height: 57px;
       border-radius: 32px;
       box-shadow: 0 13px 35px 0 rgba(0, 0, 0, 0.26);
-      background-color: #bea26c; }
-      .carousel-container .tab .lm-button p {
-        padding: 18px 25px;
+      background-color: #bea26c;
+      opacity: 0;
+      height: 0; }
+      .carousel-container .tab .lm-button a {
+        text-decoration: none;
         width: 201px;
         height: 29px;
         font-family: "Poppins", sans-serif;
@@ -595,10 +602,21 @@ header {
         font-weight: 500;
         text-align: center;
         color: #ffffff; }
+      .carousel-container .tab .lm-button.js-height {
+        height: auto !important; }
+    .carousel-container .tab .img-hover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: all .25s; }
+      .carousel-container .tab .img-hover img {
+        width: 100%;
+        height: 100%; }
+    .carousel-container .tab:hover .img-hover {
+      opacity: 1; }
     .carousel-container .tab:hover .line {
       width: 60%; }
-    .carousel-container .tab:hover .shadow {
-      background-color: rgba(0, 0, 0, 0.5); }
 
 .slick-dots {
   bottom: -10px; }
@@ -611,6 +629,44 @@ header {
       display: none; }
   .slick-dots .slick-active button {
     background-color: white; }
+
+.slick-prev,
+.slick-next {
+  left: 60px;
+  width: 60px;
+  height: 60px;
+  z-index: 13;
+  background-image: url(../img/page-left@3x.png);
+  background-size: cover;
+  display: block; }
+  .slick-prev::before,
+  .slick-next::before {
+    display: none; }
+  .slick-prev:hover,
+  .slick-next:hover {
+    display: block;
+    background-image: url(../img/page-left-100@3x.png);
+    background-size: cover; }
+  .slick-prev:focus,
+  .slick-next:focus {
+    display: block;
+    background-image: url(../img/page-left@3x.png);
+    background-size: cover; }
+
+.slick-next {
+  right: 60px;
+  left: calc(100% - 120px);
+  background-image: url(../img/page-right-copy@3x.png); }
+  .slick-next::before {
+    display: none; }
+  .slick-next:hover {
+    display: block;
+    background-image: url(../img/page-right@3x.png);
+    background-size: cover; }
+  .slick-next:focus {
+    display: block;
+    background-image: url(../img/page-right-copy@3x.png);
+    background-size: cover; }
 
 @media only screen and (max-width: 1024px) {
   main.mobile .carousel-container .tab .shadow {

@@ -1,6 +1,6 @@
 .carousel-container {
   margin: 20px 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   .tab {
     position: relative;
@@ -13,15 +13,17 @@
       width: 100%;
       height: 100%;
       position: relative;
-      background-color: rgba(0, 0, 0, 0);
-      transition: all .5s;
+      background-color: rgba(0, 0, 0, .3);
+      transition: all .7s;
     }
+
     .text-container {
       max-width: 300px;
       position: absolute;
-      bottom: 5%;
+      bottom: 20%;
       left: 15%;
       .tab-title {
+        position: relative;
         text-align: left;
         width: 260px;
         height: 80px;
@@ -31,12 +33,18 @@
         line-height: 1.11;
         color: #ffffff;
         margin-bottom: 20px;
+        h2 {
+          position: absolute;
+          bottom: 0;
+        }
       }
       .tab-text,
       .tab-title {
         color: white;
       }
       .tab-text {
+        margin-bottom: 20px;
+        text-align: left;
         width: 260px;
         height: 44px;
         font-family: $fontfamily-hind;
@@ -58,12 +66,14 @@
     }
     .lm-button {
       width: 230px;
-      height: 57px;
+      line-height: 57px;
       border-radius: 32px;
       box-shadow: 0 13px 35px 0 rgba(0, 0, 0, 0.26);
       background-color: $button-hover-brown;
-      p {
-        padding: 18px 25px;
+      opacity: 0;
+      height: 0;
+      a {
+        text-decoration: none;
         width: 201px;
         height: 29px;
         font-family: $fontfamily-poppins;
@@ -73,14 +83,27 @@
         color: #ffffff;
 
       }
+      &.js-height {
+        height: auto !important;
+      }
     }
-
+    .img-hover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: all .25s;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
     &:hover {
+      .img-hover {
+        opacity: 1;
+      }
       .line {
         width: 60%;
-      }
-      .shadow {
-        background-color: rgba(0, 0, 0, .5);
       }
     }
   }
@@ -102,6 +125,50 @@
     background-color: white;
   }
 }
+
+.slick-prev,
+.slick-next {
+  left: 60px;
+  width: 60px;
+  height: 60px;
+  z-index: 13;
+  background-image:url(../img/page-left@3x.png);
+  background-size: cover;
+  display: block;
+  &::before {
+    display: none;
+  }
+  &:hover {
+    display: block;
+    background-image: url(../img/page-left-100@3x.png);
+    background-size: cover;
+  }
+  &:focus {
+    display: block;
+    background-image: url(../img/page-left@3x.png);
+    background-size: cover;
+  }
+}
+
+.slick-next {
+  right: 60px;
+  left: calc(100% - 120px);
+  background-image:url(../img/page-right-copy@3x.png);
+  &::before {
+    display: none;
+  }
+  &:hover {
+    display: block;
+    background-image: url(../img/page-right@3x.png);
+    background-size: cover;
+  }
+  &:focus {
+    display: block;
+    background-image: url(../img/page-right-copy@3x.png);
+    background-size: cover;
+  }
+}
+
 
 @media only screen and (max-width: 1024px) {
   main.mobile {
