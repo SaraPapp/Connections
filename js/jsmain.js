@@ -53,16 +53,16 @@ $(document).ready(function () {
         var textheight = $(this).find('.tab-text').outerHeight(); // capture the xxx height
         $(this).find('.tab-text').removeClass("js-height"); // xxx -> 0
 
-        $(this).find('.lm-button').addClass("js-height"); // 0 -> xxx
-        var buttonheight = $(this).find('.lm-button').outerHeight(); // capture the xxx height
-        $(this).find('.lm-button').removeClass("js-height"); // xxx -> 0
+        $(this).find('.learn-more-btn').addClass("js-height"); // 0 -> xxx
+        var buttonheight = $(this).find('.learn-more-btn').outerHeight(); // capture the xxx height
+        $(this).find('.learn-more-btn').removeClass("js-height"); // xxx -> 0
 
         // animate from 0 to xxx
         $(this).find('.tab-text').stop().animate({
             'height':textheight,
             'opacity': 1,
         },250);
-        $(this).find('.lm-button').stop().animate({
+        $(this).find('.learn-more-btn').stop().animate({
             'height':buttonheight,
             'opacity': 1,
         },250);
@@ -71,7 +71,7 @@ $(document).ready(function () {
             'height':0,
             'opacity':0,
         },250);
-        $(this).find('.lm-button').stop().animate({
+        $(this).find('.learn-more-btn').stop().animate({
             'height':0,
             'opacity':0,
         },250);
