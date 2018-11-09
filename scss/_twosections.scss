@@ -1,30 +1,40 @@
 .duo-container {
   width: 100%;
   display: block;
+  margin: 0 auto;
 
-  .top-section {
-    margin-bottom: 50px;
-  }
   .duo-section {
+    position: relative;
     display: block;
 
     .section-image {
-      width: 458px;
+      max-width: 485px;
+      width: 90%;
+      margin: 0 auto;
       img {
+        outline: 1px solid white;
+        outline-offset: -13px;
         width: 100%;
+        -webkit-box-shadow: 0px 10px 41px -10px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 10px 41px -10px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 10px 41px -10px rgba(0, 0, 0, 0.75);
       }
     }
     .top-image {
-      float: left;
       margin: 20px auto;
     }
     .bckgrnd-img {
       display: none;
       position: relative;
-      max-width: 748px;
+      max-width: 1115px;
       img {
         width: 100%;
       }
+    }
+    .container {
+      width: 100%;
+      display: block;
+
     }
     .text-left {
       display: block;
@@ -58,20 +68,68 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .duo-container .duo-section {
-    .top-image {
-      position: absolute;
-      max-width: 50%;
-      left: calc(50% - 229px);
+@media (min-width: 1025px) {
+  .duo-container {
+    .top-section {
+      padding-top: 241px;
     }
-    .bckgrnd-img {
+    .container {
       display: block;
+      width: 100%;
       position: relative;
-      right: 0;
-      top: -50px;
-      z-index: -10;
-      margin: 0 auto;
+      overflow: hidden;
+      .section-image,
+      .section-text {
+        float: left;
+      }
+      .section-image {
+        width: 485px;
+      }
+      .section-text {
+        width: calc(100% - 485px);
+      }
+      .text-right {
+        top: 300px;
+        h2 {
+          font-size: 4em;
+        }
+        p {
+          font-size: 1.375em;
+        }
+      }
+      &.flipped {
+        .section-image,
+        .section-text {
+          float: right;
+        }
+      }
+    }
+    .duo-section {
+      .bckgrnd-img {
+        display: block;
+        position: absolute;
+        z-index: -1;
+      }
+      .background-top {
+        right: -25%;
+        top: -60px;
+        z-index: -10;
+        float: right;
+        width: 748px;
+      }
+      .background-bottom {
+        float: left;
+        left: -28%;
+      }
+      .section-text {
+        h2,
+        p {
+          text-align: left;
+        }
+      }
+      .learn-more-btn {
+        margin: 0;
+      }
     }
   }
 }

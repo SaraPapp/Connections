@@ -220,6 +220,8 @@
     cursor: pointer; }
   .learn-more-btn.js-height {
     height: auto !important; }
+  .learn-more-btn.center {
+    margin: 0 auto; }
   .learn-more-btn:hover, .learn-more-btn.brown-button {
     border-color: #bea26c;
     background-color: #bea26c; }
@@ -229,7 +231,7 @@
     box-shadow: 0 13px 35px 0 rgba(0, 0, 0, 0.26); }
 
 .blue-section {
-  margin: 100px 0; }
+  display: block; }
 
 .footer {
   width: 100%;
@@ -253,24 +255,33 @@
 
 .duo-container {
   width: 100%;
-  display: block; }
-  .duo-container .top-section {
-    margin-bottom: 50px; }
+  display: block;
+  margin: 0 auto; }
   .duo-container .duo-section {
+    position: relative;
     display: block; }
     .duo-container .duo-section .section-image {
-      width: 458px; }
+      max-width: 485px;
+      width: 90%;
+      margin: 0 auto; }
       .duo-container .duo-section .section-image img {
-        width: 100%; }
+        outline: 1px solid white;
+        outline-offset: -13px;
+        width: 100%;
+        -webkit-box-shadow: 0px 10px 41px -10px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 10px 41px -10px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 10px 41px -10px rgba(0, 0, 0, 0.75); }
     .duo-container .duo-section .top-image {
-      float: left;
       margin: 20px auto; }
     .duo-container .duo-section .bckgrnd-img {
       display: none;
       position: relative;
-      max-width: 748px; }
+      max-width: 1115px; }
       .duo-container .duo-section .bckgrnd-img img {
         width: 100%; }
+    .duo-container .duo-section .container {
+      width: 100%;
+      display: block; }
     .duo-container .duo-section .text-left {
       display: block;
       float: right; }
@@ -297,18 +308,48 @@
         line-height: 1.73;
         color: #6e6e6e; }
 
-@media (min-width: 1024px) {
-  .duo-container .duo-section .top-image {
-    position: absolute;
-    max-width: 50%;
-    left: calc(50% - 229px); }
+@media (min-width: 1025px) {
+  .duo-container .top-section {
+    padding-top: 241px; }
+  .duo-container .container {
+    display: block;
+    width: 100%;
+    position: relative;
+    overflow: hidden; }
+    .duo-container .container .section-image,
+    .duo-container .container .section-text {
+      float: left; }
+    .duo-container .container .section-image {
+      width: 485px; }
+    .duo-container .container .section-text {
+      width: calc(100% - 485px); }
+    .duo-container .container .text-right {
+      top: 300px; }
+      .duo-container .container .text-right h2 {
+        font-size: 4em; }
+      .duo-container .container .text-right p {
+        font-size: 1.375em; }
+    .duo-container .container.flipped .section-image,
+    .duo-container .container.flipped .section-text {
+      float: right; }
   .duo-container .duo-section .bckgrnd-img {
     display: block;
-    position: relative;
-    right: 0;
-    top: -50px;
+    position: absolute;
+    z-index: -1; }
+  .duo-container .duo-section .background-top {
+    right: -25%;
+    top: -60px;
     z-index: -10;
-    margin: 0 auto; } }
+    float: right;
+    width: 748px; }
+  .duo-container .duo-section .background-bottom {
+    float: left;
+    left: -28%; }
+  .duo-container .duo-section .section-text h2,
+  .duo-container .duo-section .section-text p {
+    text-align: left; }
+  .duo-container .duo-section .learn-more-btn {
+    margin: 0; } }
 header {
   width: 100%;
   position: absolute;
@@ -742,7 +783,7 @@ header {
     .slick-dots li button::before {
       display: none; }
   .slick-dots .slick-active button {
-    background-color: white; }
+    background-color: #bea26c; }
 
 .slick-prev,
 .slick-next {
@@ -801,7 +842,7 @@ body {
 
 .col-12 {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1300px;
   margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */

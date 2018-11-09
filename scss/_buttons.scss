@@ -44,6 +44,9 @@
   &.js-height {
     height: auto !important;
   }
+  &.center {
+    margin: 0 auto;
+  }
   &:hover,
   &.brown-button {
     border-color: $button-hover-brown;

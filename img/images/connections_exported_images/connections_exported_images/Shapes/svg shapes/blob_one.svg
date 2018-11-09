@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1115px" height="1047px" viewBox="0 0 1115 1047" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>blob_one</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3617.50344,8949.90625 C3515.07132,8822.14844 3461.53432,8777 3238.3553,8777 C3015.17628,8777 2915.22904,8826.74219 2831.19621,8874.57031 C2747.16338,8922.39844 2533.90537,9108.4374 2693.97835,9383 C2854.05133,9657.5626 3049.69873,9451.95145 3185.27324,9668.61606 C3320.84775,9885.28067 3518.96737,9872.531 3673.67226,9648.06441 C3828.37716,9423.59782 3719.93556,9077.66406 3617.50344,8949.90625 Z" id="path-1"></path>
+    </defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage_Images" transform="translate(-2636.000000, -8777.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="blob_one" fill="#FFFFFF" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

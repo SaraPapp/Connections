@@ -107,7 +107,7 @@
     }
   }
   .slick-active button {
-    background-color: white;
+    background-color: $button-hover-brown;
   }
 }
 
@@ -153,7 +153,6 @@
     background-size: cover;
   }
 }
-
 
 @media only screen and (max-width: 1024px) {
   main.mobile {
