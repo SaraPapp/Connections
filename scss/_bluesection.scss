@@ -1,3 +1,15 @@
 .blue-section {
   display: block;
+  background-color: #3db2b7;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 96%);
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 0 96%);
+  .blue-shape {
+    background-image: url("../img/shape-ident-copy@3x.png");
+    background-size: cover;
+    background-position: center center;
+    max-width: 1523px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+  }
 }
