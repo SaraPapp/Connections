@@ -16,7 +16,15 @@ body {
   margin: 0;
   padding: 0;
 }
+.overflow {
+  overflow: hidden;
+  position: relative;
+}
 
+main.mobile,
+main.tablet {
+overflow: hidden;
+}
 
 //mixins
 @mixin aspect-ratio($width, $height) {

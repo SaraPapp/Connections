@@ -231,10 +231,12 @@
     box-shadow: 0 13px 35px 0 rgba(0, 0, 0, 0.26); }
 
 .blue-section {
+  position: relative;
   display: block;
   background-color: #3db2b7;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 96%);
-  clip-path: polygon(0 0, 100% 0, 100% 87%, 0 96%); }
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 0 96%);
+  overflow: visible; }
   .blue-section .blue-shape {
     background-image: url("../img/shape-ident-copy@3x.png");
     background-size: cover;
@@ -242,8 +244,68 @@
     max-width: 1523px;
     width: 100%;
     margin: 0 auto;
-    height: 100%; }
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .blue-section .benefits {
+    padding: 4%;
+    display: block;
+    margin: 20px auto;
+    max-width: 1081px; }
+    .blue-section .benefits h2 {
+      font-weight: 600;
+      width: 100%;
+      font-family: "Poppins", sans-serif;
+      font-size: 4em;
+      line-height: 1;
+      text-align: center;
+      color: #ffffff; }
+  .blue-section .memberships {
+    display: block;
+    max-width: 1081px;
+    width: 100%;
+    margin-bottom: 40px; }
+    .blue-section .memberships .ms-section {
+      max-width: 235px;
+      width: 100%;
+      margin: 0 auto; }
+      .blue-section .memberships .ms-section h3 {
+        margin-bottom: 20px;
+        font-family: "Poppins", sans-serif;
+        font-size: 2.25em;
+        font-weight: 600;
+        line-height: 1.11;
+        text-align: center;
+        color: #ffffff; }
+      .blue-section .memberships .ms-section p {
+        margin-bottom: 23px;
+        font-family: "Hind", sans-serif;
+        font-size: 1em;
+        text-align: center;
+        color: #ffffff; }
+    .blue-section .memberships:last-of-type {
+      padding-bottom: 130px; }
+    .blue-section .memberships .arrow-blue-mobile {
+      margin: 0 auto;
+      max-width: 50px;
+      height: 50px;
+      display: block;
+      transition: all .15s; }
+      .blue-section .memberships .arrow-blue-mobile img {
+        width: 100%; }
 
+@media (min-width: 1024px) {
+  .blue-section .benefits {
+    padding-top: 300px; }
+
+  .membership-container {
+    max-width: 1081px; }
+    .membership-container .memberships {
+      margin: 0 auto;
+      display: inline-block;
+      max-width: 235px;
+      width: 100%; } }
 .footer {
   width: 100%;
   position: fixed;
@@ -267,7 +329,7 @@
 .duo-container {
   width: 100%;
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto 400px auto; }
   .duo-container .top-section {
     margin-bottom: 30px; }
   .duo-container .duo-section {
@@ -309,7 +371,7 @@
         width: 100%;
         font-weight: 600;
         font-family: "Poppins", sans-serif;
-        font-size: 4em;
+        font-size: 2.5em;
         line-height: 1.09;
         color: #000000; }
       .duo-container .duo-section .section-text p {
@@ -317,101 +379,82 @@
         text-align: center;
         width: 100%;
         font-family: "Poppins", sans-serif;
-        font-size: 1.375em;
+        font-size: 1em;
         font-weight: 300;
         line-height: 1.73;
         color: #6e6e6e; }
 
-@media (min-width: 1025px) {
-  .duo-container
-  .duo-section {
-    margin: 0 auto;
-    width: 1084px; }
-    .duo-container
-    .duo-section .top-section {
-      padding-top: 241px; }
-    .duo-container
-    .duo-section .top-container {
-      padding: 241px 0 400px 0; }
-    .duo-container
-    .duo-section .container {
-      display: flex;
-      width: 100%;
-      position: relative;
-      overflow: visible;
-      flex-direction: row; }
-      .duo-container
-      .duo-section .container .section-image,
-      .duo-container
-      .duo-section .container .section-text {
-        float: left; }
-      .duo-container
-      .duo-section .container .section-image {
-        width: 485px;
-        margin: 0 1%; }
-      .duo-container
-      .duo-section .container .section-text {
-        width: calc(100% - 485px); }
-      .duo-container
-      .duo-section .container .text-right {
-        top: 300px; }
-        .duo-container
-        .duo-section .container .text-right h2 {
-          font-size: 4em;
-          margin-bottom: 30px; }
-        .duo-container
-        .duo-section .container .text-right p {
-          font-size: 1.375em; }
-      .duo-container
-      .duo-section .container.flipped {
-        flex-direction: row-reverse; }
-        .duo-container
-        .duo-section .container.flipped .section-image,
-        .duo-container
-        .duo-section .container.flipped .section-text {
-          float: right; }
-        .duo-container
-        .duo-section .container.flipped .section-image {
-          margin: 0 1.5%; }
-        .duo-container
-        .duo-section .container.flipped .section-text {
-          margin-right: 30px; }
-    .duo-container
-    .duo-section .bckgrnd-img {
-      display: block;
-      position: absolute;
-      z-index: -1; }
-    .duo-container
-    .duo-section .background-top {
-      right: -25%;
-      top: -60px;
-      z-index: -10;
+@media (min-width: 1024px) {
+  .duo-container {
+    margin: 0 auto 247px auto; }
+    .duo-container .duo-section {
+      margin: 0 auto;
+      width: 1084px; }
+      .duo-container .duo-section .top-section {
+        padding-top: 241px; }
+      .duo-container .duo-section .top-container {
+        padding: 241px 0 400px 0; }
+      .duo-container .duo-section .container {
+        display: flex;
+        width: 100%;
+        position: relative;
+        overflow: visible;
+        flex-direction: row; }
+        .duo-container .duo-section .container .section-image,
+        .duo-container .duo-section .container .section-text {
+          float: left; }
+        .duo-container .duo-section .container .section-image {
+          width: 485px;
+          margin: 0 1%; }
+        .duo-container .duo-section .container .section-text {
+          width: calc(100% - 485px); }
+          .duo-container .duo-section .container .section-text h2 {
+            font-size: 4em; }
+          .duo-container .duo-section .container .section-text p {
+            font-size: 1.375em; }
+        .duo-container .duo-section .container .text-right {
+          top: 300px; }
+          .duo-container .duo-section .container .text-right h2 {
+            margin-bottom: 30px; }
+        .duo-container .duo-section .container.flipped {
+          flex-direction: row-reverse; }
+          .duo-container .duo-section .container.flipped .section-image,
+          .duo-container .duo-section .container.flipped .section-text {
+            float: right; }
+          .duo-container .duo-section .container.flipped .section-image {
+            margin: 0 1.5%; }
+          .duo-container .duo-section .container.flipped .section-text {
+            margin-right: 30px; }
+      .duo-container .duo-section .bckgrnd-img {
+        display: block;
+        position: absolute;
+        z-index: -1; }
+      .duo-container .duo-section .background-top {
+        right: -25%;
+        top: -60px;
+        z-index: -10;
+        float: right;
+        width: 748px; }
+      .duo-container .duo-section .section-text h2,
+      .duo-container .duo-section .section-text p {
+        text-align: left; }
+      .duo-container .duo-section .learn-more-btn {
+        margin: 40px auto 0 8px; }
+    .duo-container .bottom-section .background-bottom {
+      float: left;
+      left: -76%;
+      bottom: 27%; }
+    .duo-container .bottom-section .bottom-container .bottom-image {
+      margin-left: 15px; }
+    .duo-container .bottom-section .bottom-container .text-left h2 {
+      text-align: right;
+      margin: 0 auto 30px 40px; }
+    .duo-container .bottom-section .bottom-container .text-left p {
+      text-align: right;
+      margin-left: 39px; }
+    .duo-container .bottom-section .bottom-container .learn-more-btn {
       float: right;
-      width: 748px; }
-    .duo-container
-    .duo-section .section-text h2,
-    .duo-container
-    .duo-section .section-text p {
-      text-align: left; }
-    .duo-container
-    .duo-section .learn-more-btn {
-      margin: 40px auto 0 8px; }
-
-  .bottom-section .background-bottom {
-    float: left;
-    left: -76%;
-    bottom: 27%; }
-  .bottom-section .bottom-container .bottom-image {
-    margin-left: 15px; }
-  .bottom-section .bottom-container .text-left h2 {
-    text-align: right;
-    margin: 0 auto 30px 40px; }
-  .bottom-section .bottom-container .text-left p {
-    text-align: right;
-    margin-left: 39px; }
-  .bottom-section .bottom-container .learn-more-btn {
-    float: right;
-    margin-right: -30px; } }
+      margin-right: -30px; } }
 header {
   width: 100%;
   position: absolute;
@@ -480,7 +523,7 @@ header {
         stroke-linecap: round; }
 
 .viewport-height {
-  height: 100vh; }
+  min-height: 100vh; }
 
 .video-container {
   position: relative;
@@ -901,6 +944,14 @@ header {
 body {
   margin: 0;
   padding: 0; }
+
+.overflow {
+  overflow: hidden;
+  position: relative; }
+
+main.mobile,
+main.tablet {
+  overflow: hidden; }
 
 .col-12 {
   width: 100%;
