@@ -1,0 +1,114 @@
+.meet-the-team {
+  .mtt-title {
+    margin: 40px auto;
+    max-width: 1081px;
+    width: 100%;
+    font-weight: 600;
+    font-family: $fontfamily-poppins;
+    font-size: 3em;
+    padding: 10px;
+    line-height: 1;
+    text-align: center;
+    color: $black-text-colour;
+  }
+  .team-slide {
+
+    .mtt-images {
+      margin: 20px auto;
+      max-width: 360px;
+      width: 90%;
+      img {
+        width: 100%;
+        outline: solid 0.5px #fff;
+        outline-offset: -13px;
+      }
+    }
+    .mtt-middle {
+      h3,
+      h4,
+      p,
+      h5,
+      .socialmedia {
+        margin: 0 auto;
+        text-align: center;
+      }
+      h3 {
+        max-width: 377px;
+        width: 100%;
+        font-family: $fontfamily-poppins;
+        font-size: 2em;
+        color: $black-text-colour;
+        margin-bottom: 15px;
+      }
+      h4 {
+        max-width: 428px;
+        width: 90%;
+        font-family: $fontfamily-poppins;
+        font-size: 1.375em;
+        font-weight: 300;
+        line-height: 1.2;
+        color: $grey-text-colour;
+        margin-bottom: 15px;
+      }
+      p {
+        max-width: 428px;
+        width: 90%;
+        font-family: $fontfamily-hind;
+        font-size: 1em;
+        line-height: 1.2;
+        color: $grey-text-colour;
+        margin-bottom: 15px;
+      }
+      h5 {
+        max-width: 271px;
+        width: 100%;
+        font-family: $fontfamily-hind;
+        font-size: 1.125em;
+        color: $darkgrey-email-colour;
+        margin-bottom: 15px;
+        line-height: 1.5;
+      }
+      .socialmedia {
+        display: block;
+        .media-logo {
+          margin: 0 10px;
+          display: inline-block;
+          max-width: 15px;
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .readmore-section {
+        margin: 20px auto;
+        display: block;
+
+        .rm-button-container {
+          display: inline-block;
+          margin: 0 auto;
+          width: 46px;
+          height: 46px;
+          background: url("../img/button-no-text@3x.png") no-repeat;
+          background-size: cover;
+          transition: all .15s;
+        }
+        .next-button-container:hover {
+          background: url("../img/button-no-text-copy@3x.png") no-repeat;
+          background-size: cover;
+          cursor: pointer;
+        }
+        .readmore-text {
+          margin: 0 auto;
+          line-height: 46px;
+          display: inline-block;
+          width: 90px;
+          font-family: $fontfamily-poppins;
+          font-size: .8em;
+          font-weight: 500;
+          color: $black-text-colour;
+        }
+      }
+    }
+  }
+}

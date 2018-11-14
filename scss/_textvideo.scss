@@ -5,7 +5,8 @@
   padding-top: 290px;
 
   .title-text h2 {
-    font: bold 4em $fontfamily-poppins;
+    padding: 10px;
+    font: bold 2.5em $fontfamily-poppins;
     max-width: 1081px;
     width: 100%;
     height: auto;
@@ -14,12 +15,13 @@
     margin: 0 auto 20px auto;
   }
   .sub-text {
+    padding: 10px;
     font-family: $fontfamily-poppins;
     margin: 0 auto 40px;
     max-width: 863px;
     width: 100%;
     height: auto;
-    font-size: 1.375em;
+    font-size: 1.2em;
     font-weight: 300;
     line-height: 1.73;
     color: #6e6e6e;
@@ -39,3 +41,13 @@
   }
 }
 
+@include lg {
+  .text-container {
+    .title-text h2 {
+      font: bold 4em $fontfamily-poppins;
+    }
+    .sub-text {
+      font-size: 1.375em;
+    }
+  }
+}

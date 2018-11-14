@@ -94,3 +94,4 @@ function detectMobile(){
         $("main").removeClass("mobile");
     }
 }
+

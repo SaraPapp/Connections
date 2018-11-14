@@ -17,10 +17,10 @@
     position: absolute;
     top: 0;
     left: 0;
-
+    z-index: -1;
   }
   .benefits {
-    padding: 4%;
+    padding: 50px 4%;
     display: block;
     margin: 20px auto;
     max-width: 1081px;
@@ -28,7 +28,7 @@
       font-weight: 600;
       width: 100%;
       font-family: $fontfamily-poppins;
-      font-size: 4em;
+      font-size: 3em;
       line-height: 1;
       text-align: center;
       color: #ffffff;
@@ -47,7 +47,7 @@
       h3 {
         margin-bottom: 20px;
         font-family: $fontfamily-poppins;
-        font-size: 2.25em;
+        font-size: 2em;
         font-weight: 600;
         line-height: 1.11;
         text-align: center;
@@ -59,6 +59,7 @@
         font-size: 1em;
         text-align: center;
         color: #ffffff;
+        line-height: 1.5;
       }
     }
     &:last-of-type {
@@ -75,21 +76,56 @@
         width: 100%;
       }
     }
+    .arrow-blue {
+      display: none;
+    }
   }
 }
 
 @include lg {
-  .blue-section .benefits {
-    padding-top: 300px;
-  }
-  .membership-container {
-    max-width: 1081px;
-
-    .memberships {
+  .blue-section {
+    max-height: 1000px;
+    .benefits {
+      padding-top: 298px;
+      h2 {
+        font-size: 4em;
+      }
+    }
+    .membership-container {
+      max-width: 1081px;
+      display: grid;
+      grid-template-columns: auto auto auto;
       margin: 0 auto;
-      display: inline-block;
-      max-width: 235px;
-      width: 100%;
+
+      .memberships {
+        margin: 0 auto;
+        max-width: 235px;
+        width: 100%;
+        .ms-section {
+          h3 {
+            font-size: 2.25em;
+          }
+        }
+
+        .arrow-blue-mobile {
+          display: none;
+        }
+        .arrow-blue {
+          margin: 0 auto;
+          width: 50px;
+          height: 50px;
+          background: url("../img/buttons/button-round@3x.png") no-repeat;
+          display: block;
+          background-size: cover;
+          transition: all .15s;
+        }
+        .arrow-blue:hover {
+          background: url("../img/buttons/button-round-hover@3x.png") no-repeat;
+          background-size: cover;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
+

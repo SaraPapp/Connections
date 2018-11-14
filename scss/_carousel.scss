@@ -94,6 +94,10 @@
   }
 }
 
+.slick-dotted.slick-slider {
+  margin-bottom: 50px;
+}
+
 .slick-dots {
   bottom: -10px;
   li button {
@@ -117,7 +121,7 @@
   width: 60px;
   height: 60px;
   z-index: 13;
-  background-image:url(../img/page-left@3x.png);
+  background-image: url(../img/page-left@3x.png);
   background-size: cover;
   display: block;
   &::before {
@@ -138,7 +142,7 @@
 .slick-next {
   right: 60px;
   left: calc(100% - 120px);
-  background-image:url(../img/page-right-copy@3x.png);
+  background-image: url(../img/page-right-copy@3x.png);
   &::before {
     display: none;
   }
