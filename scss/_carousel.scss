@@ -31,7 +31,7 @@
         font-size: 36px;
         font-weight: 600;
         line-height: 1.11;
-        color: #ffffff;
+        color: $white-colour;
         margin-bottom: 20px;
         h2 {
           position: absolute;
@@ -40,7 +40,7 @@
       }
       .tab-text,
       .tab-title {
-        color: white;
+        color: $white-colour;
       }
       .tab-text {
         margin-bottom: 20px;
@@ -50,7 +50,7 @@
         font-family: $fontfamily-hind;
         font-size: 16px;
         line-height: 1.38;
-        color: #ffffff;
+        color: $white-colour;
         height: 0;
         opacity: 0;
         &.js-height {
@@ -68,7 +68,7 @@
     .line {
       margin: 20px 0;
       width: 30%;
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid $white-colour;
       transition: all .25s;
     }
     .img-hover {
@@ -121,7 +121,7 @@
   width: 60px;
   height: 60px;
   z-index: 13;
-  background-image: url(../img/page-left@3x.png);
+  background-image: url(../img/buttons/page-left@3x.png);
   background-size: cover;
   display: block;
   &::before {
@@ -129,12 +129,12 @@
   }
   &:hover {
     display: block;
-    background-image: url(../img/page-left-100@3x.png);
+    background-image: url(../img/buttons/page-left-100@3x.png);
     background-size: cover;
   }
   &:focus {
     display: block;
-    background-image: url(../img/page-left@3x.png);
+    background-image: url(../img/buttons/page-left@3x.png);
     background-size: cover;
   }
 }
@@ -142,18 +142,18 @@
 .slick-next {
   right: 60px;
   left: calc(100% - 120px);
-  background-image: url(../img/page-right-copy@3x.png);
+  background-image: url(../img/buttons/page-right-copy@3x.png);
   &::before {
     display: none;
   }
   &:hover {
     display: block;
-    background-image: url(../img/page-right@3x.png);
+    background-image: url(../img/buttons/page-right@3x.png);
     background-size: cover;
   }
   &:focus {
     display: block;
-    background-image: url(../img/page-right-copy@3x.png);
+    background-image: url(../img/buttons/page-right-copy@3x.png);
     background-size: cover;
   }
 }
@@ -173,7 +173,7 @@
       .line {
         margin: 20px 0;
         width: 60%;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid $white-colour;
       }
     }
   }

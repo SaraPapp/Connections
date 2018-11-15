@@ -7,6 +7,25 @@ $(document).ready(function () {
         }
     });
 
+    $('.one-time').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        arrows: true,
+        swipe: true,
+        responsive: [
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
     $('.js-carousel').slick({
         dots: true,
         infinite: true,

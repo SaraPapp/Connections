@@ -9,6 +9,7 @@
 @import 'textvideo';
 @import 'carousel';
 @import 'meettheteam';
+@import 'blacksection';
 
 * {
   box-sizing: border-box;
@@ -25,6 +26,10 @@ body {
 main.mobile,
 main.tablet {
 overflow: hidden;
+}
+.sub-content {
+  background-color: white;
+  margin-bottom: 320px;
 }
 
 //mixins

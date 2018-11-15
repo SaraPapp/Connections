@@ -1,29 +1,84 @@
-
 .footer {
   width: 100%;
   position: fixed;
   bottom: 0;
-  height: 150px;
-  background-color: grey;
-  color: white;
+  height: 320px;
+  background-color: $white-colour;
   z-index: -1;
+  max-height: 320px;
+  height: 100%;
   .logo,
-  .text {
-    float: left;
-    padding: 10px;
+  .copyright {
+    max-width: 220px;
+    width: 100%;
+    margin: 0 auto;
     box-sizing: border-box;
-  }
-
-  .logo {
-    width: 100px;
-
+    padding: 20px 0 10px 0;
     img {
       width: 100%;
     }
   }
-  .text {
-    width: calc(calc(100% - 100px) / 2);
+  .copyright {
+    font-family: $fontfamily-hind;
+    font-size: .7em;
+    text-align: center;
+    color: $footer-text-colour;
+  }
+  .middle-text {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 318px;
+    font-family: $fontfamily-hind;
+    line-height: 1.4;
+    font-size: .7em;
+    color: $footer-text-colour;
+    text-align: center;
+  }
+  .right-section {
+    .policylinks {
+      margin: 0 auto;
+      padding: 20px 10px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      max-width: 340px;
+      width: 100%;
+      a {
+        text-decoration: none;
+        font-family: $fontfamily-poppins;
+        font-size: .7em;
+        font-weight: 500;
+        text-align: center;
+        color: $footer-text-colour;
+      }
+    }
+    .footer-socialmedia {
+      display: block;
+      margin: 0 auto;
+      max-width: 190px;
+      width: 100%;
+
+      .sm-logo {
+        margin: 10px;
+        display: inline-block;
+        max-width: 15px;
+        width: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .facebook {
+        height: 15px;
+        width: 9px;
+      }
+      .youtube {
+        max-width: 19px;
+      }
+    }
   }
 }
+
+
+
 
 

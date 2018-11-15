@@ -11,15 +11,34 @@
     text-align: center;
     color: $black-text-colour;
   }
+  .mtt-content {
+    position: relative;
+    padding-bottom: 85px;
+  }
+  .mtt-background {
+    background-image: url("../img/mountains@3x.png");
+    background-size: cover;
+    background-position: center center;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    max-height: 542px;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }
   .team-slide {
-
+    max-width: 500px;
+    width: 90%;
     .mtt-images {
       margin: 20px auto;
       max-width: 360px;
       width: 90%;
       img {
         width: 100%;
-        outline: solid 0.5px #fff;
+        outline: solid 0.5px $white-colour;;
         outline-offset: -13px;
       }
     }
@@ -40,11 +59,14 @@
         color: $black-text-colour;
         margin-bottom: 15px;
       }
+      span {
+        font-weight: 600;
+      }
       h4 {
         max-width: 428px;
         width: 90%;
         font-family: $fontfamily-poppins;
-        font-size: 1.375em;
+        font-size: 1.25em;
         font-weight: 300;
         line-height: 1.2;
         color: $grey-text-colour;
@@ -63,13 +85,14 @@
         max-width: 271px;
         width: 100%;
         font-family: $fontfamily-hind;
-        font-size: 1.125em;
+        font-size: 1.063em;
         color: $darkgrey-email-colour;
         margin-bottom: 15px;
         line-height: 1.5;
       }
       .socialmedia {
         display: block;
+
         .media-logo {
           margin: 0 10px;
           display: inline-block;
@@ -77,7 +100,12 @@
           width: 100%;
           img {
             width: 100%;
+            height: 100%;
           }
+        }
+        .facebook {
+          height: 15px;
+          width: 9px;
         }
       }
       .readmore-section {
@@ -85,7 +113,6 @@
         display: block;
 
         .rm-button-container {
-          display: inline-block;
           margin: 0 auto;
           width: 46px;
           height: 46px;
@@ -100,15 +127,33 @@
         }
         .readmore-text {
           margin: 0 auto;
-          line-height: 46px;
-          display: inline-block;
-          width: 90px;
+          line-height: 30px;
+          width: 71px;
+          text-align: center;
           font-family: $fontfamily-poppins;
           font-size: .8em;
           font-weight: 500;
           color: $black-text-colour;
         }
       }
+    }
+  }
+  .one-time {
+    .slick-next,
+    .slick-prev {
+      left: 10px;
+      width: 40px;
+      height: 40px;
+      top: 25%;
+      background-size: cover;
+      z-index: 13;
+    }
+    .slick-next {
+      background-image: url(../img/buttons/button-no-text-copy@3x.png);
+      left: calc(100% - 50px);
+    }
+    .slick-prev {
+      background-image: url(../img/buttons/button-no-text-left@3x.png);
     }
   }
 }
