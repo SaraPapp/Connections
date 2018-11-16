@@ -1017,159 +1017,239 @@ header {
     margin: 20px 0;
     width: 60%;
     border-bottom: 1px solid #ffffff; } }
-.meet-the-team .mtt-title {
-  margin: 40px auto;
-  max-width: 1081px;
-  width: 100%;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  font-size: 3em;
-  padding: 10px;
-  line-height: 1;
-  text-align: center;
-  color: #000000; }
-.meet-the-team .mtt-content {
-  position: relative;
-  padding-bottom: 85px; }
-.meet-the-team .mtt-background {
-  background-image: url("../img/mountains@3x.png");
-  background-size: cover;
-  background-position: center center;
-  max-width: 1600px;
-  width: 100%;
+.meet-the-team {
   margin: 0 auto;
-  max-height: 542px;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 0; }
-.meet-the-team .team-slide {
-  max-width: 500px;
-  width: 90%; }
-  .meet-the-team .team-slide .mtt-images {
-    margin: 20px auto;
-    max-width: 360px;
-    width: 90%; }
-    .meet-the-team .team-slide .mtt-images img {
-      width: 100%;
-      outline: solid 0.5px #ffffff;
-      outline-offset: -13px; }
-  .meet-the-team .team-slide .mtt-middle h3,
-  .meet-the-team .team-slide .mtt-middle h4,
-  .meet-the-team .team-slide .mtt-middle p,
-  .meet-the-team .team-slide .mtt-middle h5,
-  .meet-the-team .team-slide .mtt-middle .socialmedia {
-    margin: 0 auto;
-    text-align: center; }
-  .meet-the-team .team-slide .mtt-middle h3 {
-    max-width: 377px;
-    width: 100%;
-    font-family: "Poppins", sans-serif;
-    font-size: 2em;
-    color: #000000;
-    margin-bottom: 15px; }
-  .meet-the-team .team-slide .mtt-middle span {
-    font-weight: 600; }
-  .meet-the-team .team-slide .mtt-middle h4 {
-    max-width: 428px;
-    width: 90%;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.25em;
-    font-weight: 300;
-    line-height: 1.2;
-    color: #6e6e6e;
-    margin-bottom: 15px; }
-  .meet-the-team .team-slide .mtt-middle p {
-    max-width: 428px;
-    width: 90%;
-    font-family: "Hind", sans-serif;
-    font-size: 1em;
-    line-height: 1.2;
-    color: #6e6e6e;
-    margin-bottom: 15px; }
-  .meet-the-team .team-slide .mtt-middle h5 {
-    max-width: 271px;
-    width: 100%;
-    font-family: "Hind", sans-serif;
-    font-size: 1.063em;
-    color: #4b4b4b;
-    margin-bottom: 15px;
-    line-height: 1.5; }
-  .meet-the-team .team-slide .mtt-middle .socialmedia {
-    display: block; }
-    .meet-the-team .team-slide .mtt-middle .socialmedia .media-logo {
-      margin: 0 10px;
-      display: inline-block;
-      max-width: 15px;
-      width: 100%; }
-      .meet-the-team .team-slide .mtt-middle .socialmedia .media-logo img {
-        width: 100%;
-        height: 100%; }
-    .meet-the-team .team-slide .mtt-middle .socialmedia .facebook {
-      height: 15px;
-      width: 9px; }
-  .meet-the-team .team-slide .mtt-middle .readmore-section {
-    margin: 20px auto;
-    display: block; }
-    .meet-the-team .team-slide .mtt-middle .readmore-section .rm-button-container {
-      margin: 0 auto;
-      width: 46px;
-      height: 46px;
-      background: url("../img/button-no-text@3x.png") no-repeat;
-      background-size: cover;
-      transition: all .15s; }
-    .meet-the-team .team-slide .mtt-middle .readmore-section .next-button-container:hover {
-      background: url("../img/button-no-text-copy@3x.png") no-repeat;
-      background-size: cover;
-      cursor: pointer; }
-    .meet-the-team .team-slide .mtt-middle .readmore-section .readmore-text {
-      margin: 0 auto;
-      line-height: 30px;
-      width: 71px;
-      text-align: center;
-      font-family: "Poppins", sans-serif;
-      font-size: .8em;
-      font-weight: 500;
-      color: #000000; }
-.meet-the-team .one-time .slick-next,
-.meet-the-team .one-time .slick-prev {
-  left: 10px;
-  width: 40px;
-  height: 40px;
-  top: 25%;
-  background-size: cover;
-  z-index: 13; }
-.meet-the-team .one-time .slick-next {
-  background-image: url(../img/buttons/button-no-text-copy@3x.png);
-  left: calc(100% - 50px); }
-.meet-the-team .one-time .slick-prev {
-  background-image: url(../img/buttons/button-no-text-left@3x.png); }
-
-.black-section {
-  display: block;
   max-width: 1600px;
-  max-height: 150px;
-  width: 100%;
-  height: 100%;
-  background-color: #212121; }
-  .black-section .black-section-text {
+  width: 100%; }
+  .meet-the-team .mtt-title {
+    margin: 40px auto;
+    max-width: 1081px;
+    width: 100%;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 3em;
+    padding: 10px;
+    line-height: 1;
+    text-align: center;
+    color: #000000; }
+  .meet-the-team .mtt-content {
+    position: relative;
+    padding-bottom: 85px; }
+  .meet-the-team .mtt-background {
+    background-image: url("../img/mountains@3x.png");
+    background-size: cover;
+    background-position: center center;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    max-height: 542px;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0; }
+  .meet-the-team .team-slide {
+    max-width: 1200px;
+    width: 100%; }
+    .meet-the-team .team-slide .mtt-images {
+      margin: 20px auto;
+      max-width: 360px;
+      width: 90%; }
+      .meet-the-team .team-slide .mtt-images img {
+        width: 100%;
+        outline: solid 0.5px #ffffff;
+        outline-offset: -13px; }
+    .meet-the-team .team-slide .mtt-middle h3,
+    .meet-the-team .team-slide .mtt-middle h4,
+    .meet-the-team .team-slide .mtt-middle p,
+    .meet-the-team .team-slide .mtt-middle h5,
+    .meet-the-team .team-slide .mtt-middle .socialmedia {
+      margin: 0 auto;
+      text-align: center; }
+    .meet-the-team .team-slide .mtt-middle h3 {
+      max-width: 377px;
+      width: 100%;
+      font-family: "Poppins", sans-serif;
+      font-size: 2em;
+      color: #000000;
+      margin-bottom: 15px; }
+    .meet-the-team .team-slide .mtt-middle span {
+      font-weight: 600; }
+    .meet-the-team .team-slide .mtt-middle h4 {
+      max-width: 428px;
+      width: 100%;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.25em;
+      font-weight: 300;
+      line-height: 1.2;
+      color: #6e6e6e;
+      margin-bottom: 15px; }
+    .meet-the-team .team-slide .mtt-middle p {
+      max-width: 428px;
+      width: 90%;
+      font-family: "Hind", sans-serif;
+      font-size: 1em;
+      line-height: 1.2;
+      color: #6e6e6e;
+      margin-bottom: 15px; }
+    .meet-the-team .team-slide .mtt-middle h5 {
+      max-width: 271px;
+      width: 100%;
+      font-family: "Hind", sans-serif;
+      font-size: 1.063em;
+      color: #4b4b4b;
+      margin-bottom: 15px;
+      line-height: 1.5; }
+    .meet-the-team .team-slide .mtt-middle .socialmedia {
+      display: block; }
+      .meet-the-team .team-slide .mtt-middle .socialmedia .media-logo {
+        margin: 0 10px;
+        display: inline-block;
+        max-width: 15px;
+        width: 100%; }
+        .meet-the-team .team-slide .mtt-middle .socialmedia .media-logo img {
+          width: 100%;
+          height: 100%; }
+      .meet-the-team .team-slide .mtt-middle .socialmedia .facebook {
+        height: 15px;
+        width: 9px; }
+    .meet-the-team .team-slide .mtt-middle .readmore-section {
+      margin: 20px auto;
+      display: block; }
+      .meet-the-team .team-slide .mtt-middle .readmore-section .rm-button-container {
+        margin: 0 auto;
+        width: 46px;
+        height: 46px;
+        background: url("../img/button-no-text@3x.png") no-repeat;
+        background-size: cover;
+        transition: all .15s; }
+      .meet-the-team .team-slide .mtt-middle .readmore-section .next-button-container:hover {
+        background: url("../img/button-no-text-copy@3x.png") no-repeat;
+        background-size: cover;
+        cursor: pointer; }
+      .meet-the-team .team-slide .mtt-middle .readmore-section .readmore-text {
+        margin: 0 auto;
+        line-height: 30px;
+        width: 71px;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-size: .8em;
+        font-weight: 500;
+        color: #000000; }
+  .meet-the-team .one-time-container .one-time .slick-next,
+  .meet-the-team .one-time-container .one-time .slick-prev {
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    top: 25%;
+    background-size: cover;
+    z-index: 13; }
+  .meet-the-team .one-time-container .one-time .slick-next {
+    background-image: url(../img/buttons/button-no-text-copy@3x.png);
+    left: calc(100% - 50px); }
+  .meet-the-team .one-time-container .one-time .slick-prev {
+    background-image: url(../img/buttons/button-no-text-left@3x.png); }
+
+.names {
+  position: relative;
+  z-index: 80;
+  display: none; }
+
+@media (min-width: 576px) {
+  .meet-the-team .one-time .slick-next {
+    left: calc(100% - 80px); }
+  .meet-the-team .one-time .slick-prev {
+    left: 40px; } }
+@media (min-width: 768px) {
+  .meet-the-team .one-time .slick-next {
+    left: calc(100% - 120px); }
+  .meet-the-team .one-time .slick-prev {
+    left: 80px; } }
+@media (min-width: 1300px) {
+  .mtt-title {
+    margin-bottom: 80px; }
+
+  .one-time-container .one-time {
     display: inline-block;
+    max-width: calc(100% - 240px); }
+    .one-time-container .one-time .team-slide {
+      display: inline-block; }
+      .one-time-container .one-time .team-slide .mtt-images {
+        float: left;
+        margin: 0 76px 0 150px; }
+      .one-time-container .one-time .team-slide .mtt-middle {
+        float: left; }
+        .one-time-container .one-time .team-slide .mtt-middle h3,
+        .one-time-container .one-time .team-slide .mtt-middle h4,
+        .one-time-container .one-time .team-slide .mtt-middle p,
+        .one-time-container .one-time .team-slide .mtt-middle h5,
+        .one-time-container .one-time .team-slide .mtt-middle .socialmedia {
+          text-align: left; }
+        .one-time-container .one-time .team-slide .mtt-middle h3 {
+          font-size: 2em; }
+        .one-time-container .one-time .team-slide .mtt-middle h4 {
+          font-size: 1.375em;
+          max-width: 428px;
+          width: 100%;
+          line-height: 1.73; }
+        .one-time-container .one-time .team-slide .mtt-middle p {
+          font-size: 1em;
+          line-height: 1.5; }
+        .one-time-container .one-time .team-slide .mtt-middle h5 {
+          font-size: 1.125em; }
+
+  .mtt-content {
+    display: inline-block;
+    position: relative; }
+    .mtt-content .one-time .slick-track {
+      width: 100% !important; }
+    .mtt-content .names {
+      position: absolute;
+      right: 0;
+      top: 123px;
+      width: 240px;
+      display: block; }
+      .mtt-content .names .name {
+        margin-bottom: 20px;
+        text-align: right; }
+        .mtt-content .names .name a {
+          text-decoration: none;
+          font-family: "Poppins", sans-serif;
+          font-size: 1em;
+          color: #cccccc; }
+          .mtt-content .names .name a span {
+            font-weight: 700; }
+      .mtt-content .names .focus a {
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        text-align: right;
+        color: #000000; } }
+.black-section {
+  max-width: 1600px;
+  width: 100%;
+  background-color: #212121; }
+  .black-section .black-section-text-container {
+    display: block;
+    margin: 0 auto;
     max-width: 833px;
     width: 100%;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.1em;
-    font-weight: 500;
-    line-height: 1.73;
-    text-align: center;
-    padding: 40px 5px;
-    color: #ffffff; }
-  .black-section .black-section-arrow {
-    display: inline-block;
-    max-width: 27px;
-    width: 100%; }
-    .black-section .black-section-arrow img {
+    padding: 50px 10px; }
+    .black-section .black-section-text-container .black-section-text {
+      margin: 0 auto;
+      display: inline-block;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.1em;
+      font-weight: 500;
+      line-height: 1.73;
+      text-align: center;
+      color: #ffffff;
+      padding-right: 10px; }
+    .black-section .black-section-text-container .black-section-arrow {
+      display: inline-block;
+      max-width: 20px;
       width: 100%; }
+      .black-section .black-section-text-container .black-section-arrow img {
+        width: 100%; }
 
 * {
   box-sizing: border-box; }

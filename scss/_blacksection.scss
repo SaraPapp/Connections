@@ -1,28 +1,32 @@
 .black-section {
-  display: block;
   max-width: 1600px;
-  max-height: 150px;
   width: 100%;
-  height: 100%;
   background-color: #212121;
-  .black-section-text {
-    display: inline-block;
+  .black-section-text-container {
+    display: block;
+    margin: 0 auto;
     max-width: 833px;
     width: 100%;
-    font-family: $fontfamily-poppins;
-    font-size: 1.1em;
-    font-weight: 500;
-    line-height: 1.73;
-    text-align: center;
-    padding: 40px 5px;
-    color: $white-colour;
-  }
-  .black-section-arrow {
-    display: inline-block;
-    max-width: 27px;
-    width: 100%;
-    img {
+    padding: 50px 10px;
+    .black-section-text {
+      margin: 0 auto;
+      display: inline-block;
+      font-family: $fontfamily-poppins;
+      font-size: 1.1em;
+      font-weight: 500;
+      line-height: 1.73;
+      text-align: center;
+      color: $white-colour;
+      padding-right: 10px;
+    }
+    .black-section-arrow {
+      display: inline-block;
+      // margin-left: calc(50% - 10px);
+      max-width: 20px;
       width: 100%;
+      img {
+        width: 100%;
+      }
     }
   }
 }

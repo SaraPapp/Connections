@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e4735fe-5c14-4579-8666-e8553589c276" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scss/_blacksection.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/button-no-text-copy@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/facebook_2018-11-14.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/facebook_2018-11-14/facebook@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/facebook_2018-11-14/facebook@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/page-left-100@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/page-left@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/page-right-copy@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/page-right@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/socialmedia/facebook.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/jsmain.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jsmain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_carousel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_carousel.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_blacksection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_blacksection.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/_meettheteam.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_meettheteam.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -88,29 +75,29 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="2" />
-          <entry key="scss" value="24" />
+          <entry key="scss" value="25" />
           <entry key="svg" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="2" />
-          <entry key="SCSS" value="24" />
+          <entry key="SCSS" value="25" />
           <entry key="SVG" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="3984" />
-          <entry key="js" value="612" />
-          <entry key="scss" value="12696" />
+          <entry key="html" value="4196" />
+          <entry key="js" value="1288" />
+          <entry key="scss" value="13974" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="3984" />
-          <entry key="JavaScript" value="612" />
-          <entry key="SCSS" value="12696" />
+          <entry key="HTML" value="4196" />
+          <entry key="JavaScript" value="1288" />
+          <entry key="SCSS" value="13974" />
         </counts>
       </usages-collector>
     </session>
@@ -122,8 +109,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="275">
-                  <caret line="305" column="140" selection-start-line="305" selection-start-column="140" selection-end-line="305" selection-end-column="140" />
+                <state relative-caret-position="3285">
+                  <caret line="373" column="32" lean-forward="true" selection-start-line="373" selection-start-column="32" selection-end-line="373" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
@@ -135,8 +122,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scss/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+                <state relative-caret-position="-357">
+                  <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
                 </state>
               </provider>
             </entry>
@@ -144,8 +131,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scss/_variables.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="23">
-                  <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+                <state relative-caret-position="230">
+                  <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
                 </state>
               </provider>
             </entry>
@@ -162,7 +149,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scss/_footer.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="483">
+                <state relative-caret-position="-621">
                   <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
                 </state>
               </provider>
@@ -180,8 +167,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scss/_carousel.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="96">
-                  <caret line="155" column="41" selection-start-line="155" selection-start-column="41" selection-end-line="155" selection-end-column="41" />
+                <state relative-caret-position="-640">
+                  <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -189,17 +176,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scss/_meettheteam.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="46">
-                  <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scss/_blacksection.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="368">
-                  <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+                <state relative-caret-position="644">
+                  <caret line="40" column="17" lean-forward="true" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -207,8 +185,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/jsmain.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="276">
-                  <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+                <state relative-caret-position="-325">
+                  <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
                 </state>
               </provider>
             </entry>
@@ -216,7 +194,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scss/_bluesection.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="368">
+                <state relative-caret-position="-1357">
                   <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="18" selection-end-column="12" />
                 </state>
               </provider>
@@ -249,6 +227,8 @@
       <find>tab-text</find>
       <find>#ff</find>
       <find>white</find>
+      <find>1440</find>
+      <find>one-</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -268,14 +248,14 @@
         <option value="$PROJECT_DIR$/scss/_bluesection.scss" />
         <option value="$PROJECT_DIR$/scss/_buttons.scss" />
         <option value="$PROJECT_DIR$/scss/_twosections.scss" />
-        <option value="$PROJECT_DIR$/js/jsmain.js" />
         <option value="$PROJECT_DIR$/scss/_carousel.scss" />
         <option value="$PROJECT_DIR$/scss/_variables.scss" />
         <option value="$PROJECT_DIR$/scss/main.scss" />
-        <option value="$PROJECT_DIR$/scss/_meettheteam.scss" />
         <option value="$PROJECT_DIR$/scss/_footer.scss" />
         <option value="$PROJECT_DIR$/scss/_blacksection.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/scss/_meettheteam.scss" />
+        <option value="$PROJECT_DIR$/js/jsmain.js" />
       </list>
     </option>
   </component>
@@ -390,12 +370,12 @@
       <workItem from="1541422353599" duration="7180000" />
       <workItem from="1541433557678" duration="44982000" />
       <workItem from="1541606648984" duration="39883000" />
-      <workItem from="1542015103874" duration="84044000" />
+      <workItem from="1542015103874" duration="101804000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220365000" />
+    <option name="totallyTimeSpent" value="238125000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1016" extended-state="6" />
@@ -491,24 +471,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_bluesection.scss">
+    <entry file="file://$PROJECT_DIR$/scss/_footer.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="18" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/jsmain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="-621">
+          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/_carousel.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="155" column="41" selection-start-line="155" selection-start-column="41" selection-end-line="155" selection-end-column="41" />
+        <state relative-caret-position="-640">
+          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -519,45 +492,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/main.scss">
+    <entry file="file://$PROJECT_DIR$/scss/_blacksection.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="161">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_bluesection.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1357">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="18" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_blacksection.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_meettheteam.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="230">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="305" column="140" selection-start-line="305" selection-start-column="140" selection-end-line="305" selection-end-column="140" />
+        <state relative-caret-position="3285">
+          <caret line="373" column="32" lean-forward="true" selection-start-line="373" selection-start-column="32" selection-end-line="373" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jsmain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-325">
+          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_meettheteam.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="40" column="17" lean-forward="true" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
         </state>
       </provider>
     </entry>
