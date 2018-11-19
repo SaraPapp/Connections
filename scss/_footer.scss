@@ -9,7 +9,7 @@
   height: 100%;
   .logo,
   .copyright {
-    max-width: 220px;
+    max-width: 249px;
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
@@ -78,7 +78,51 @@
   }
 }
 
-
+@include lg {
+  .footer {
+    padding: 109px 135px 0 145px;
+    margin: 0 auto;
+    display: block;
+    .logo,
+    .middle-text,
+    .right-section {
+      display: inline-block;
+    }
+    .logo {
+      margin-right: 70px;
+      .copyright {
+        font-size: 0.865em;
+      }
+    }
+    .middle-text {
+      text-align: left;
+      font-size: 0.865em;
+    }
+    .right-section {
+      float: right;
+      .policylinks {
+        padding: 20px 0;
+        max-width: 400px;
+        width: 100%;
+        a {
+          padding: 0 10px;
+          font-size: 0.865em;
+          cursor: pointer;
+        }
+        a:hover {
+          color: $button-hover-brown;
+        }
+      }
+      .footer-socialmedia {
+        width: 100%;
+        float: right;
+        .sm-logo {
+          margin: 10px;
+        }
+      }
+    }
+  }
+}
 
 
 

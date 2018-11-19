@@ -1,16 +1,16 @@
 .black-section {
+  margin: 0 auto;
   max-width: 1600px;
   width: 100%;
   background-color: #212121;
-  .black-section-text-container {
-    display: block;
-    margin: 0 auto;
-    max-width: 833px;
+  .black-section-content {
     width: 100%;
+    margin: 0 auto;
+    display: block;
     padding: 50px 10px;
     .black-section-text {
+      position: relative;
       margin: 0 auto;
-      display: inline-block;
       font-family: $fontfamily-poppins;
       font-size: 1.1em;
       font-weight: 500;
@@ -18,10 +18,11 @@
       text-align: center;
       color: $white-colour;
       padding-right: 10px;
+      span {
+        margin-left: 10px;
+      }
     }
     .black-section-arrow {
-      display: inline-block;
-      // margin-left: calc(50% - 10px);
       max-width: 20px;
       width: 100%;
       img {

@@ -1,5 +1,6 @@
 .carousel-container {
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 20px !important;
   width: 100%;
   height: 100vh;
   .tab {
@@ -89,6 +90,35 @@
       }
       .line {
         width: 60%;
+      }
+    }
+  }
+}
+
+main.mobile .carousel-container {
+  .tab {
+  .tab-container {
+    left: calc(50% - 130px);
+      .tab-title {
+        text-align: center;
+        h2 {
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .img-hover {
+        opacity: 1;
+      }
+      .line {
+        margin: 0 auto;
+        width: 60%;
+      }
+      .tab-text,
+      .learn-more-btn {
+        text-align: center;
+        height: auto;
+        opacity: 1;
+        margin: 20px auto;
       }
     }
   }

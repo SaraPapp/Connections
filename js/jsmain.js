@@ -16,13 +16,15 @@ $(document).ready(function () {
         adaptiveHeight: true,
         arrows: true,
         swipe: true,
+        fade: false,
         responsive: [
             {
                 breakpoint: 9000,
                 settings: {
                     fade: true,
                     arrows: false,
-                    swipe: false
+                    swipe: false,
+                    cssEase: 'linear'
                 }
             },
             {
@@ -120,8 +122,12 @@ $(document).ready(function () {
         e.preventDefault();
         var target = $(this).attr('href');
         var index = $('.one-time').find(target).index();
-
+        $('.names .name.focus').removeClass('focus');
+        $(this).parents('.name').addClass('focus');
         $('.one-time').slick('slickGoTo', index);
+        setTimeout(function(){
+            $(target).css({'position':'absolute', 'left':'0'})
+        },300);
     });
 
     // Transforms names list into a slider

@@ -1,7 +1,9 @@
 .duo-container {
   width: 100%;
   display: block;
-  margin: 0 auto 400px auto;
+  margin: 0 auto ;
+  padding-top: 50px;
+  overflow: hidden;
   .top-section {
     margin-bottom: 30px;
   }
@@ -37,12 +39,12 @@
     }
     .text-left {
       display: block;
-      float: right;
     }
     .section-text {
       text-align: center;
       max-width: 530px;
       width: 100%;
+      margin: 0 auto;
       h2 {
         margin: 0 auto;
         padding: 10px;
@@ -69,7 +71,9 @@
 
 @include lg {
   .duo-container {
-    margin: 0 auto 247px auto;
+    margin: 0 auto ;
+    padding-top: 0;
+    padding-bottom: 247px;
     .duo-section {
       margin: 0 auto;
       width: 1084px;
@@ -125,15 +129,19 @@
       .bckgrnd-img {
         display: block;
         position: absolute;
-        z-index: -1;
-
+        z-index: 0;
+        width: 1000px;
       }
       .background-top {
-        right: -25%;
+        right: -46%;
         top: -60px;
-        z-index: -10;
         float: right;
-        width: 748px;
+      }
+      .background-bottom {
+        float: left;
+        left: -73%;
+        top: -133%;
+        width: 1200px;
       }
       .section-text {
         h2,
@@ -146,11 +154,6 @@
       }
     }
     .bottom-section {
-      .background-bottom {
-        float: left;
-        left: -76%;
-        bottom: 27%;
-      }
       .bottom-container {
         .bottom-image {
           margin-left: 15px;

@@ -17,12 +17,15 @@
   .mtt-content {
     position: relative;
     padding-bottom: 85px;
+    width: 100%;
+  }
+  .mtt-wrapper {
+    position: relative;
   }
   .mtt-background {
     background-image: url("../img/mountains@3x.png");
     background-size: cover;
     background-position: center center;
-    max-width: 1600px;
     width: 100%;
     margin: 0 auto;
     max-height: 542px;
@@ -119,12 +122,12 @@
           margin: 0 auto;
           width: 46px;
           height: 46px;
-          background: url("../img/button-no-text@3x.png") no-repeat;
+          background: url("../img/buttons/button-no-text@3x.png") no-repeat;
           background-size: cover;
           transition: all .15s;
         }
         .next-button-container:hover {
-          background: url("../img/button-no-text-copy@3x.png") no-repeat;
+          background: url("../img/buttons/button-no-text-copy@3x.png") no-repeat;
           background-size: cover;
           cursor: pointer;
         }
@@ -143,6 +146,7 @@
   }
   .one-time-container {
     .one-time {
+      margin-left: -27px;
       .slick-next,
       .slick-prev {
         left: 10px;
@@ -217,24 +221,42 @@
           h5,
           .socialmedia {
             text-align: left;
+            margin: 0;
           }
           h3 {
+            margin-bottom: 15px;
             font-size: 2em;
           }
           h4 {
+            margin-bottom: 15px;
             font-size: 1.375em;
             max-width: 428px;
             width: 100%;
             line-height: 1.73;
           }
           p {
+            margin-bottom: 15px;
             font-size: 1em;
             line-height: 1.5;
           }
           h5 {
+            margin-bottom: 15px;
             font-size: 1.125em;
+            line-height: 2;
           }
         }
+      }
+    }
+    .readmore-section {
+      .rm-button-container,
+      .readmore-text {
+        display: inline-block;
+      }
+      .rm-button-container {
+        margin: 0 17px 0 auto;
+      }
+      .readmore-text {
+        margin: 20px;
       }
     }
   }
@@ -246,7 +268,7 @@
     }
     .names {
       position: absolute;
-      right: 0;
+      right: 70px;
       top: 123px;
       width: 240px;
       display: block;
