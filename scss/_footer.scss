@@ -4,9 +4,7 @@
   bottom: 0;
   height: 320px;
   background-color: $white-colour;
-  z-index: -1;
-  max-height: 320px;
-  height: 100%;
+  z-index: 0;
   .logo,
   .copyright {
     max-width: 249px;
@@ -51,34 +49,69 @@
         color: $footer-text-colour;
       }
     }
-    .footer-socialmedia {
+    .socialmedia {
       display: block;
       margin: 0 auto;
-      max-width: 190px;
+      max-width: 215px;
       width: 100%;
-
-      .sm-logo {
-        margin: 10px;
+      a {
         display: inline-block;
-        max-width: 15px;
-        width: 100%;
-        img {
-          width: 100%;
-          height: 100%;
+
+        .sm-logo {
+          margin: 10px;
+          display: inline-block;
+          width: 17px;
+          height: 17px;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          transition: all .15s;
+          img {
+            width: 100%;
+            height: 100%;
+          }
         }
-      }
-      .facebook {
-        height: 15px;
-        width: 9px;
-      }
-      .youtube {
-        max-width: 19px;
+        .facebook {
+          background-image: url("../img/socialmedia/facebook@3x.png");
+          background-size: auto 100%;
+          width: 9px;
+        }
+        .twitter {
+          background-image: url("../img/socialmedia/twitter@3x.png");
+        }
+        .linkedin {
+          background-image: url("../img/socialmedia/linkedin@3x.png");
+        }
+        .instagram {
+          background-image: url("../img/socialmedia/instagram@3x.png");
+        }
+        .youtube {
+          background-image: url("../img/socialmedia/youtube@3x.png");
+          max-width: 19px;
+          vertical-align: text-bottom;
+        }
+        &:hover {
+          .facebook {
+            background-image: url("../img/socialmedia/facebook-hover@3x.png");
+          }
+          .twitter {
+            background-image: url("../img/socialmedia/twitter-hover@3x.png");
+          }
+          .linkedin {
+            background-image: url("../img/socialmedia/linkedin-hover@3x.png");
+          }
+          .instagram {
+            background-image: url("../img/socialmedia/instagram-hover@3x.png");
+          }
+          .youtube {
+            background-image: url("../img/socialmedia/youtube-hover@3x.png");
+          }
+        }
       }
     }
   }
 }
 
-@include lg {
+@include xl {
   .footer {
     padding: 109px 135px 0 145px;
     margin: 0 auto;
@@ -89,14 +122,18 @@
       display: inline-block;
     }
     .logo {
-      margin-right: 70px;
+      margin-right: 4%;
       .copyright {
         font-size: 0.865em;
       }
     }
     .middle-text {
+      max-width: 318px;
+      width: 100%;
       text-align: left;
       font-size: 0.865em;
+      vertical-align: top;
+      margin-top: 20px;
     }
     .right-section {
       float: right;
@@ -107,22 +144,21 @@
         a {
           padding: 0 10px;
           font-size: 0.865em;
-          cursor: pointer;
         }
         a:hover {
-          color: $button-hover-brown;
+          color: $button-hover-brown !important;
+          cursor: pointer;
         }
       }
       .footer-socialmedia {
         width: 100%;
         float: right;
-        .sm-logo {
-          margin: 10px;
-        }
       }
     }
   }
 }
+
+
 
 
 

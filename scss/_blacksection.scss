@@ -1,6 +1,5 @@
 .black-section {
   margin: 0 auto;
-  max-width: 1600px;
   width: 100%;
   background-color: #212121;
   .black-section-content {
@@ -21,6 +20,9 @@
       span {
         margin-left: 10px;
       }
+    }
+    a:hover {
+      cursor: pointer;
     }
     .black-section-arrow {
       max-width: 20px;

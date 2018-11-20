@@ -217,7 +217,8 @@
     color: #000000;
     text-align: center;
     margin: 0 auto;
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 55; }
   .learn-more-btn.js-height {
     height: auto !important; }
   .learn-more-btn.center {
@@ -337,9 +338,7 @@
   bottom: 0;
   height: 320px;
   background-color: #ffffff;
-  z-index: -1;
-  max-height: 320px;
-  height: 100%; }
+  z-index: 0; }
   .footer .logo,
   .footer .copyright {
     max-width: 249px;
@@ -378,26 +377,50 @@
       font-weight: 500;
       text-align: center;
       color: #aaaaaa; }
-  .footer .right-section .footer-socialmedia {
+  .footer .right-section .socialmedia {
     display: block;
     margin: 0 auto;
-    max-width: 190px;
+    max-width: 215px;
     width: 100%; }
-    .footer .right-section .footer-socialmedia .sm-logo {
-      margin: 10px;
-      display: inline-block;
-      max-width: 15px;
-      width: 100%; }
-      .footer .right-section .footer-socialmedia .sm-logo img {
-        width: 100%;
-        height: 100%; }
-    .footer .right-section .footer-socialmedia .facebook {
-      height: 15px;
-      width: 9px; }
-    .footer .right-section .footer-socialmedia .youtube {
-      max-width: 19px; }
+    .footer .right-section .socialmedia a {
+      display: inline-block; }
+      .footer .right-section .socialmedia a .sm-logo {
+        margin: 10px;
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        transition: all .15s; }
+        .footer .right-section .socialmedia a .sm-logo img {
+          width: 100%;
+          height: 100%; }
+      .footer .right-section .socialmedia a .facebook {
+        background-image: url("../img/socialmedia/facebook@3x.png");
+        background-size: auto 100%;
+        width: 9px; }
+      .footer .right-section .socialmedia a .twitter {
+        background-image: url("../img/socialmedia/twitter@3x.png"); }
+      .footer .right-section .socialmedia a .linkedin {
+        background-image: url("../img/socialmedia/linkedin@3x.png"); }
+      .footer .right-section .socialmedia a .instagram {
+        background-image: url("../img/socialmedia/instagram@3x.png"); }
+      .footer .right-section .socialmedia a .youtube {
+        background-image: url("../img/socialmedia/youtube@3x.png");
+        max-width: 19px;
+        vertical-align: text-bottom; }
+      .footer .right-section .socialmedia a:hover .facebook {
+        background-image: url("../img/socialmedia/facebook-hover@3x.png"); }
+      .footer .right-section .socialmedia a:hover .twitter {
+        background-image: url("../img/socialmedia/twitter-hover@3x.png"); }
+      .footer .right-section .socialmedia a:hover .linkedin {
+        background-image: url("../img/socialmedia/linkedin-hover@3x.png"); }
+      .footer .right-section .socialmedia a:hover .instagram {
+        background-image: url("../img/socialmedia/instagram-hover@3x.png"); }
+      .footer .right-section .socialmedia a:hover .youtube {
+        background-image: url("../img/socialmedia/youtube-hover@3x.png"); }
 
-@media (min-width: 1024px) {
+@media (min-width: 1300px) {
   .footer {
     padding: 109px 135px 0 145px;
     margin: 0 auto;
@@ -407,12 +430,16 @@
     .footer .right-section {
       display: inline-block; }
     .footer .logo {
-      margin-right: 70px; }
+      margin-right: 4%; }
       .footer .logo .copyright {
         font-size: 0.865em; }
     .footer .middle-text {
+      max-width: 318px;
+      width: 100%;
       text-align: left;
-      font-size: 0.865em; }
+      font-size: 0.865em;
+      vertical-align: top;
+      margin-top: 20px; }
     .footer .right-section {
       float: right; }
       .footer .right-section .policylinks {
@@ -421,15 +448,13 @@
         width: 100%; }
         .footer .right-section .policylinks a {
           padding: 0 10px;
-          font-size: 0.865em;
-          cursor: pointer; }
+          font-size: 0.865em; }
         .footer .right-section .policylinks a:hover {
-          color: #bea26c; }
+          color: #bea26c !important;
+          cursor: pointer; }
       .footer .right-section .footer-socialmedia {
         width: 100%;
-        float: right; }
-        .footer .right-section .footer-socialmedia .sm-logo {
-          margin: 10px; } }
+        float: right; } }
 .duo-container {
   width: 100%;
   display: block;
@@ -568,16 +593,24 @@ header {
   z-index: 6;
   display: block; }
   header .header .connections-logo {
-    display: inline-block;
+    position: absolute;
+    display: block;
     width: 197px;
-    margin-left: calc(50% - 200px); }
+    left: 5%; }
     header .header .connections-logo img {
       width: 100%; }
+    @media (min-width: 768px) {
+      header .header .connections-logo {
+        left: calc(50% - 98.5px); } }
+    @media (min-width: 768px) and (max-width: 938px) {
+      header .header .connections-logo {
+        left: 5%; } }
   header .header .menu-right {
-    float: right; }
+    float: right;
+    margin-right: 5%; }
     header .header .menu-right .login {
       position: relative;
-      display: block;
+      display: none;
       float: left;
       width: 210px;
       height: 40px;
@@ -598,6 +631,9 @@ header {
           border-right: 1px solid rgba(255, 255, 255, 0.5); }
         header .header .menu-right .login a.apply {
           padding-left: 17px; }
+      @media (min-width: 768px) {
+        header .header .menu-right .login {
+          display: inline-block; } }
     header .header .menu-right .menu {
       padding-top: 9px;
       display: block;
@@ -877,8 +913,7 @@ header {
 
 .text-container {
   text-align: center;
-  margin-bottom: 287px;
-  padding-top: 290px; }
+  padding: 50px 0; }
   .text-container .title-text h2 {
     padding: 10px;
     font: bold 2.5em "Poppins", sans-serif;
@@ -1076,7 +1111,6 @@ main.mobile .carousel-container .tab .tab-container {
     border-bottom: 1px solid #ffffff; } }
 .meet-the-team {
   margin: 0 auto;
-  max-width: 1600px;
   width: 100%; }
   .meet-the-team .mtt-title {
     margin: 40px auto;
@@ -1152,7 +1186,7 @@ main.mobile .carousel-container .tab .tab-container {
       color: #6e6e6e;
       margin-bottom: 15px; }
     .meet-the-team .team-slide .mtt-middle h5 {
-      max-width: 271px;
+      max-width: 276px;
       width: 100%;
       font-family: "Hind", sans-serif;
       font-size: 1.063em;
@@ -1161,32 +1195,56 @@ main.mobile .carousel-container .tab .tab-container {
       line-height: 1.5; }
     .meet-the-team .team-slide .mtt-middle .socialmedia {
       display: block; }
-      .meet-the-team .team-slide .mtt-middle .socialmedia .media-logo {
-        margin: 0 10px;
+      .meet-the-team .team-slide .mtt-middle .socialmedia .sm-logo {
+        margin: 10px;
         display: inline-block;
-        max-width: 15px;
-        width: 100%; }
-        .meet-the-team .team-slide .mtt-middle .socialmedia .media-logo img {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        transition: all .15s;
+        width: 15px;
+        height: 15px; }
+        .meet-the-team .team-slide .mtt-middle .socialmedia .sm-logo img {
           width: 100%;
           height: 100%; }
-      .meet-the-team .team-slide .mtt-middle .socialmedia .facebook {
-        height: 15px;
-        width: 9px; }
+      .meet-the-team .team-slide .mtt-middle .socialmedia a {
+        display: inline-block; }
+        .meet-the-team .team-slide .mtt-middle .socialmedia a .facebook {
+          background-image: url("../img/socialmedia/facebook@3x.png");
+          background-size: auto 100%; }
+        .meet-the-team .team-slide .mtt-middle .socialmedia a .twitter {
+          background-image: url("../img/socialmedia/twitter@3x.png"); }
+        .meet-the-team .team-slide .mtt-middle .socialmedia a .linkedin {
+          background-image: url("../img/socialmedia/linkedin@3x.png"); }
+        .meet-the-team .team-slide .mtt-middle .socialmedia a .instagram {
+          background-image: url("../img/socialmedia/instagram@3x.png"); }
+        .meet-the-team .team-slide .mtt-middle .socialmedia a:hover .facebook {
+          background-image: url("../img/socialmedia/facebook-hover@3x.png"); }
+        .meet-the-team .team-slide .mtt-middle .socialmedia a:hover .twitter {
+          background-image: url("../img/socialmedia/twitter-hover@3x.png"); }
+        .meet-the-team .team-slide .mtt-middle .socialmedia a:hover .linkedin {
+          background-image: url("../img/socialmedia/linkedin-hover@3x.png"); }
+        .meet-the-team .team-slide .mtt-middle .socialmedia a:hover .instagram {
+          background-image: url("../img/socialmedia/instagram-hover@3x.png"); }
     .meet-the-team .team-slide .mtt-middle .readmore-section {
       margin: 20px auto;
-      display: block; }
+      display: block;
+      max-width: 150px;
+      width: 100%; }
       .meet-the-team .team-slide .mtt-middle .readmore-section .rm-button-container {
-        margin: 0 auto;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 17px;
         width: 46px;
         height: 46px;
         background: url("../img/buttons/button-no-text@3x.png") no-repeat;
         background-size: cover;
         transition: all .15s; }
-      .meet-the-team .team-slide .mtt-middle .readmore-section .next-button-container:hover {
+      .meet-the-team .team-slide .mtt-middle .readmore-section .rm-button-container:hover {
         background: url("../img/buttons/button-no-text-copy@3x.png") no-repeat;
         background-size: cover;
         cursor: pointer; }
       .meet-the-team .team-slide .mtt-middle .readmore-section .readmore-text {
+        display: inline-block;
         margin: 0 auto;
         line-height: 30px;
         width: 71px;
@@ -1195,21 +1253,22 @@ main.mobile .carousel-container .tab .tab-container {
         font-size: .8em;
         font-weight: 500;
         color: #000000; }
-  .meet-the-team .one-time-container .one-time {
-    margin-left: -27px; }
-    .meet-the-team .one-time-container .one-time .slick-next,
-    .meet-the-team .one-time-container .one-time .slick-prev {
-      left: 10px;
-      width: 40px;
-      height: 40px;
-      top: 25%;
-      background-size: cover;
-      z-index: 13; }
-    .meet-the-team .one-time-container .one-time .slick-next {
-      background-image: url(../img/buttons/button-no-text-copy@3x.png);
-      left: calc(100% - 50px); }
-    .meet-the-team .one-time-container .one-time .slick-prev {
-      background-image: url(../img/buttons/button-no-text-left@3x.png); }
+
+.one-time-container .one-time {
+  margin-left: 0 auto; }
+  .one-time-container .one-time .slick-next,
+  .one-time-container .one-time .slick-prev {
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    top: 25%;
+    background-size: cover;
+    z-index: 13; }
+  .one-time-container .one-time .slick-next {
+    background-image: url(../img/buttons/button-no-text-copy@3x.png);
+    left: calc(100% - 150px); }
+  .one-time-container .one-time .slick-prev {
+    background-image: url(../img/buttons/button-no-text-left@3x.png); }
 
 .names {
   position: relative;
@@ -1234,7 +1293,8 @@ main.mobile .carousel-container .tab .tab-container {
     display: inline-block;
     max-width: calc(100% - 240px); }
     .one-time-container .one-time .team-slide {
-      display: inline-block; }
+      display: inline-block;
+      padding-bottom: 150px; }
       .one-time-container .one-time .team-slide .mtt-images {
         float: left;
         margin: 0 76px 0 150px; }
@@ -1246,7 +1306,7 @@ main.mobile .carousel-container .tab .tab-container {
         .one-time-container .one-time .team-slide .mtt-middle h5,
         .one-time-container .one-time .team-slide .mtt-middle .socialmedia {
           text-align: left;
-          margin: 0; }
+          margin: 0 0 10px 0; }
         .one-time-container .one-time .team-slide .mtt-middle h3 {
           margin-bottom: 15px;
           font-size: 2em; }
@@ -1264,13 +1324,17 @@ main.mobile .carousel-container .tab .tab-container {
           margin-bottom: 15px;
           font-size: 1.125em;
           line-height: 2; }
-  .one-time-container .readmore-section .rm-button-container,
-  .one-time-container .readmore-section .readmore-text {
-    display: inline-block; }
-  .one-time-container .readmore-section .rm-button-container {
-    margin: 0 17px 0 auto; }
-  .one-time-container .readmore-section .readmore-text {
-    margin: 20px; }
+  .one-time-container .readmore-section {
+    text-align: left;
+    margin: 0 !important; }
+    .one-time-container .readmore-section a {
+      display: inline-block; }
+    .one-time-container .readmore-section .rm-button-container {
+      margin: 0 17px 0 auto;
+      z-index: 30;
+      vertical-align: middle; }
+    .one-time-container .readmore-section .readmore-text {
+      margin: 20px; }
 
   .mtt-content {
     display: inline-block;
@@ -1279,28 +1343,41 @@ main.mobile .carousel-container .tab .tab-container {
       width: 100% !important; }
     .mtt-content .names {
       position: absolute;
-      right: 70px;
+      right: 35px;
       top: 123px;
-      width: 240px;
+      width: 305px;
+      height: 150px;
+      overflow: hidden;
       display: block; }
       .mtt-content .names .name {
-        margin-bottom: 20px;
-        text-align: right; }
+        margin-bottom: 15px;
+        display: inline-block;
+        text-align: right;
+        line-height: 22px; }
         .mtt-content .names .name a {
           text-decoration: none;
           font-family: "Poppins", sans-serif;
           font-size: 1em;
-          color: #cccccc; }
+          color: #cccccc;
+          margin-right: 29px; }
           .mtt-content .names .name a span {
             font-weight: 700; }
-      .mtt-content .names .focus a {
-        font-family: "Poppins", sans-serif;
-        font-size: 20px;
-        text-align: right;
-        color: #000000; } }
+        .mtt-content .names .name .name-arrow {
+          width: 19px;
+          display: none;
+          margin-left: 10px; }
+          .mtt-content .names .name .name-arrow img {
+            width: 100%; }
+        .mtt-content .names .name.focus a {
+          font-family: "Poppins", sans-serif;
+          font-size: 20px;
+          margin-right: 0;
+          text-align: right;
+          color: #000000; }
+        .mtt-content .names .name.focus .name-arrow {
+          display: inline-block; } }
 .black-section {
   margin: 0 auto;
-  max-width: 1600px;
   width: 100%;
   background-color: #212121; }
   .black-section .black-section-content {
@@ -1320,6 +1397,8 @@ main.mobile .carousel-container .tab .tab-container {
       padding-right: 10px; }
       .black-section .black-section-content .black-section-text span {
         margin-left: 10px; }
+    .black-section .black-section-content a:hover {
+      cursor: pointer; }
     .black-section .black-section-content .black-section-arrow {
       max-width: 20px;
       width: 100%; }
@@ -1343,7 +1422,9 @@ main.tablet {
 
 .sub-content {
   background-color: white;
-  margin-bottom: 320px; }
+  margin-bottom: 320px;
+  position: relative;
+  z-index: 1; }
 
 .col-12 {
   width: 100%;

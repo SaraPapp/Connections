@@ -1,6 +1,5 @@
 .meet-the-team {
   margin: 0 auto;
-  max-width: 1600px;
   width: 100%;
   .mtt-title {
     margin: 40px auto;
@@ -88,7 +87,7 @@
         margin-bottom: 15px;
       }
       h5 {
-        max-width: 271px;
+        max-width: 276px;
         width: 100%;
         font-family: $fontfamily-hind;
         font-size: 1.063em;
@@ -98,40 +97,74 @@
       }
       .socialmedia {
         display: block;
-
-        .media-logo {
-          margin: 0 10px;
+        .sm-logo {
+          margin: 10px;
           display: inline-block;
-          max-width: 15px;
-          width: 100%;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          transition: all .15s;
+          width: 15px;
+          height: 15px;
           img {
             width: 100%;
             height: 100%;
           }
         }
-        .facebook {
-          height: 15px;
-          width: 9px;
+        a {
+          display: inline-block;
+
+          .facebook {
+            background-image: url("../img/socialmedia/facebook@3x.png");
+            background-size: auto 100%;
+          }
+          .twitter {
+            background-image: url("../img/socialmedia/twitter@3x.png");
+          }
+          .linkedin {
+            background-image: url("../img/socialmedia/linkedin@3x.png");
+          }
+          .instagram {
+            background-image: url("../img/socialmedia/instagram@3x.png");
+          }
+          &:hover {
+            .facebook {
+              background-image: url("../img/socialmedia/facebook-hover@3x.png");
+            }
+            .twitter {
+              background-image: url("../img/socialmedia/twitter-hover@3x.png");
+            }
+            .linkedin {
+              background-image: url("../img/socialmedia/linkedin-hover@3x.png");
+            }
+            .instagram {
+              background-image: url("../img/socialmedia/instagram-hover@3x.png");
+            }
+          }
         }
       }
       .readmore-section {
         margin: 20px auto;
         display: block;
+        max-width: 150px;
+        width: 100%;
 
         .rm-button-container {
-          margin: 0 auto;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 17px;
           width: 46px;
           height: 46px;
           background: url("../img/buttons/button-no-text@3x.png") no-repeat;
           background-size: cover;
           transition: all .15s;
         }
-        .next-button-container:hover {
+        .rm-button-container:hover {
           background: url("../img/buttons/button-no-text-copy@3x.png") no-repeat;
           background-size: cover;
           cursor: pointer;
         }
         .readmore-text {
+          display: inline-block;
           margin: 0 auto;
           line-height: 30px;
           width: 71px;
@@ -144,25 +177,26 @@
       }
     }
   }
-  .one-time-container {
-    .one-time {
-      margin-left: -27px;
-      .slick-next,
-      .slick-prev {
-        left: 10px;
-        width: 40px;
-        height: 40px;
-        top: 25%;
-        background-size: cover;
-        z-index: 13;
-      }
-      .slick-next {
-        background-image: url(../img/buttons/button-no-text-copy@3x.png);
-        left: calc(100% - 50px);
-      }
-      .slick-prev {
-        background-image: url(../img/buttons/button-no-text-left@3x.png);
-      }
+}
+
+.one-time-container {
+  .one-time {
+    margin-left: 0 auto;
+    .slick-next,
+    .slick-prev {
+      left: 10px;
+      width: 40px;
+      height: 40px;
+      top: 25%;
+      background-size: cover;
+      z-index: 13;
+    }
+    .slick-next {
+      background-image: url(../img/buttons/button-no-text-copy@3x.png);
+      left: calc(100% - 150px);
+    }
+    .slick-prev {
+      background-image: url(../img/buttons/button-no-text-left@3x.png);
     }
   }
 }
@@ -209,6 +243,7 @@
       max-width: calc(100% - 240px);
       .team-slide {
         display: inline-block;
+        padding-bottom: 150px;
         .mtt-images {
           float: left;
           margin: 0 76px 0 150px;
@@ -221,7 +256,7 @@
           h5,
           .socialmedia {
             text-align: left;
-            margin: 0;
+            margin: 0 0 10px 0;
           }
           h3 {
             margin-bottom: 15px;
@@ -248,12 +283,15 @@
       }
     }
     .readmore-section {
-      .rm-button-container,
-      .readmore-text {
+      text-align: left;
+      margin: 0 !important;
+      a {
         display: inline-block;
       }
       .rm-button-container {
         margin: 0 17px 0 auto;
+        z-index: 30;
+        vertical-align: middle;
       }
       .readmore-text {
         margin: 20px;
@@ -268,31 +306,50 @@
     }
     .names {
       position: absolute;
-      right: 70px;
+      right: 35px;
       top: 123px;
-      width: 240px;
+      width: 305px;
+      height: 150px;
+      overflow: hidden;
       display: block;
       .name {
-        margin-bottom: 20px;
+        margin-bottom:15px;
+        display: inline-block;
         text-align: right;
+        line-height: 22px;
         a {
           text-decoration: none;
           font-family: $fontfamily-poppins;
           font-size: 1em;
           color: #cccccc;
+          margin-right: 29px;
           span {
             font-weight: 700;
           }
         }
-      }
-      .focus {
-        a {
-          font-family: $fontfamily-poppins;
-          font-size: 20px;
-          text-align: right;
-          color: #000000;
+        .name-arrow {
+          width: 19px;
+          display: none;
+          margin-left: 10px;
+
+          img {
+            width: 100%;
+          }
+        }
+        &.focus {
+          a {
+            font-family: $fontfamily-poppins;
+            font-size: 20px;
+            margin-right: 0;
+            text-align: right;
+            color: #000000;
+          }
+          .name-arrow {
+            display: inline-block;
+          }
         }
       }
+
     }
   }
 }
