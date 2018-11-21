@@ -1,9 +1,21 @@
 $(document).ready(function () {
     $(".js-modal-btn").each(function () {
         if ($(this).hasClass("js-video-vimeo")) {
-            $(this).modalVideo({channel: 'vimeo'});
+            $(this).modalVideo({
+                channel: 'vimeo',
+                vimeo: {
+                    autoplay: true,
+                    loop: true
+                }
+            });
         } else {
-            $(this).modalVideo();
+            $(this).modalVideo({
+                channel: 'youtube',
+                youtube: {
+                    autoplay: 0,
+                    loop: 1
+                },
+            });
         }
     });
 
@@ -40,7 +52,7 @@ $(document).ready(function () {
     $('.js-carousel').slick({
         dots: true,
         infinite: true,
-        //autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
         speed: 300,
         arrows: true,
@@ -125,9 +137,9 @@ $(document).ready(function () {
         $('.names .name.focus').removeClass('focus');
         $(this).parents('.name').addClass('focus');
         $('.one-time').slick('slickGoTo', index);
-        setTimeout(function(){
-            $(target).css({'position':'absolute', 'left':'0'})
-        },300);
+        setTimeout(function () {
+            $(target).css({'position': 'absolute', 'left': '0'})
+        }, 300);
     });
 
     // Transforms names list into a slider

@@ -147,7 +147,9 @@
         display: block;
         max-width: 150px;
         width: 100%;
-
+        a {
+          text-decoration: none;
+        }
         .rm-button-container {
           display: inline-block;
           vertical-align: middle;
@@ -193,7 +195,7 @@
     }
     .slick-next {
       background-image: url(../img/buttons/button-no-text-copy@3x.png);
-      left: calc(100% - 150px);
+      left: calc(100% - 50px);
     }
     .slick-prev {
       background-image: url(../img/buttons/button-no-text-left@3x.png);
@@ -313,7 +315,7 @@
       overflow: hidden;
       display: block;
       .name {
-        margin-bottom:15px;
+        margin-bottom: 15px;
         display: inline-block;
         text-align: right;
         line-height: 22px;

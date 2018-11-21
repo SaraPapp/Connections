@@ -128,7 +128,7 @@
       }
     }
     .middle-text {
-      max-width: 318px;
+      max-width: calc(100% - 767px);
       width: 100%;
       text-align: left;
       font-size: 0.865em;
