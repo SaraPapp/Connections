@@ -111,48 +111,101 @@
   }
 }
 
+main {
+  .go-top-container {
+    position: fixed;
+    z-index: 50;
+    bottom: 137px;
+    height: 46px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    .go-top {
+      position: absolute;
+      z-index: 50;
+      right: -60px;
+      display: none;
+      width: 46px;
+      height: 46px;
+      background: url("../img/buttons/back-to-top@3x.png") no-repeat;
+      background-size: cover;
+      transition: all .25s;
+      -webkit-box-shadow: 0px 5px 31px -1px rgba(0,0,0,0);
+      -moz-box-shadow: 0px 5px 31px -1px rgba(0,0,0,0);
+      box-shadow: 0px 5px 31px -1px rgba(0,0,0,0);
+      border-radius: 50%;
+      &:hover {
+        background: url("../img/buttons/back-to-top-hover@3x.png") no-repeat;
+        background-size: cover;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 5px 31px -1px rgba(0,0,0,0.35);
+        -moz-box-shadow: 0px 5px 31px -1px rgba(0,0,0,0.35);
+        box-shadow: 0px 5px 31px -1px rgba(0,0,0,0.35);
+      }
+    }
+    @include lg {
+      .go-top {
+        display: block;
+      }
+    }
+    @include xxl {
+      .go-top {
+        right: 30px;
+      }
+    }
+    &.mobile {
+      .go-top {
+        display: none !important;
+      }
+    }
+  }
+}
+
 @include xl {
   .footer {
     padding: 109px 135px 0 145px;
     margin: 0 auto;
     display: block;
-    .logo,
-    .middle-text,
-    .right-section {
+    .footer-container {
       display: inline-block;
-    }
-    .logo {
-      margin-right: 4%;
-      .copyright {
-        font-size: 0.865em;
+      .logo,
+      .middle-text,
+      .right-section {
+        display: inline-block;
       }
-    }
-    .middle-text {
-      max-width: calc(100% - 767px);
-      width: 100%;
-      text-align: left;
-      font-size: 0.865em;
-      vertical-align: top;
-      margin-top: 20px;
-    }
-    .right-section {
-      float: right;
-      .policylinks {
-        padding: 20px 0;
-        max-width: 400px;
-        width: 100%;
-        a {
-          padding: 0 10px;
+      .logo {
+        margin-right: 4%;
+        .copyright {
           font-size: 0.865em;
         }
-        a:hover {
-          color: $button-hover-brown !important;
-          cursor: pointer;
-        }
       }
-      .footer-socialmedia {
+      .middle-text {
+        max-width: calc(100% - 767px);
         width: 100%;
+        text-align: left;
+        font-size: 0.865em;
+        vertical-align: top;
+        margin-top: 20px;
+      }
+      .right-section {
         float: right;
+        .policylinks {
+          padding: 20px 0;
+          max-width: 400px;
+          width: 100%;
+          a {
+            padding: 0 10px;
+            font-size: 0.865em;
+          }
+          a:hover {
+            color: $button-hover-brown !important;
+            cursor: pointer;
+          }
+        }
+        .footer-socialmedia {
+          width: 100%;
+          float: right;
+        }
       }
     }
   }

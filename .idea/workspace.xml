@@ -7,9 +7,11 @@
       <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/jsmain.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jsmain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_meettheteam.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_meettheteam.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_bluesection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_bluesection.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_carousel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_carousel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_video.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_video.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -77,7 +79,7 @@
         <counts>
           <entry key="html" value="5" />
           <entry key="js" value="7" />
-          <entry key="scss" value="49" />
+          <entry key="scss" value="56" />
           <entry key="svg" value="2" />
         </counts>
       </usages-collector>
@@ -85,22 +87,22 @@
         <counts>
           <entry key="HTML" value="5" />
           <entry key="JavaScript" value="7" />
-          <entry key="SCSS" value="49" />
+          <entry key="SCSS" value="56" />
           <entry key="SVG" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="4593" />
-          <entry key="js" value="1558" />
-          <entry key="scss" value="17965" />
+          <entry key="html" value="4747" />
+          <entry key="js" value="1612" />
+          <entry key="scss" value="18713" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="4593" />
-          <entry key="JavaScript" value="1558" />
-          <entry key="SCSS" value="17965" />
+          <entry key="HTML" value="4747" />
+          <entry key="JavaScript" value="1612" />
+          <entry key="SCSS" value="18713" />
         </counts>
       </usages-collector>
     </session>
@@ -112,13 +114,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="713">
-                  <caret line="409" column="98" selection-start-line="409" selection-start-column="98" selection-end-line="409" selection-end-column="98" />
-                  <caret line="415" column="98" selection-start-line="415" selection-start-column="98" selection-end-line="415" selection-end-column="98" />
-                  <caret line="421" column="98" selection-start-line="421" selection-start-column="98" selection-end-line="421" selection-end-column="98" />
-                  <caret line="427" column="98" selection-start-line="427" selection-start-column="98" selection-end-line="427" selection-end-column="98" />
-                  <caret line="433" column="98" selection-start-line="433" selection-start-column="98" selection-end-line="433" selection-end-column="98" />
-                  <caret line="439" column="98" selection-start-line="439" selection-start-column="98" selection-end-line="439" selection-end-column="98" />
+                <state relative-caret-position="549">
+                  <caret line="494" column="9" selection-start-line="494" selection-start-column="9" selection-end-line="494" selection-end-column="45" />
                 </state>
               </provider>
             </entry>
@@ -139,17 +136,26 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scss/_variables.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="368">
-                  <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+                <state relative-caret-position="115">
+                  <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/scss/_footer.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="460">
+                  <caret line="131" column="27" selection-start-line="131" selection-start-column="27" selection-end-line="131" selection-end-column="27" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scss/_video.scss">
+            <entry file="file://$PROJECT_DIR$/scss/_twosections.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="456">
-                  <caret line="134" column="17" lean-forward="true" selection-start-line="134" selection-start-column="17" selection-end-line="134" selection-end-column="17" />
+                <state relative-caret-position="634">
+                  <caret line="151" column="20" lean-forward="true" selection-start-line="151" selection-start-column="20" selection-end-line="151" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -157,26 +163,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/jsmain.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+                <state relative-caret-position="494">
+                  <caret line="182" column="24" lean-forward="true" selection-start-line="182" selection-start-column="24" selection-end-line="182" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scss/_bluesection.scss">
+            <entry file="file://$PROJECT_DIR$/scss/_buttons.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="276">
-                  <caret line="84" selection-start-line="84" selection-end-line="84" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/scss/_meettheteam.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="226">
-                  <caret line="150" column="32" selection-start-line="150" selection-start-column="32" selection-end-line="150" selection-end-column="32" />
+                <state relative-caret-position="92">
+                  <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="5" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -235,20 +232,20 @@
         <option value="$PROJECT_DIR$/scss/twosections.scss" />
         <option value="$PROJECT_DIR$/img/text.svg" />
         <option value="$PROJECT_DIR$/map.html" />
-        <option value="$PROJECT_DIR$/scss/_bluesection.scss" />
-        <option value="$PROJECT_DIR$/scss/_twosections.scss" />
-        <option value="$PROJECT_DIR$/scss/_carousel.scss" />
-        <option value="$PROJECT_DIR$/scss/_buttons.scss" />
         <option value="$PROJECT_DIR$/scss/_textvideo.scss" />
         <option value="$PROJECT_DIR$/scss/main.scss" />
-        <option value="$PROJECT_DIR$/scss/_footer.scss" />
         <option value="$PROJECT_DIR$/scss/_blacksection.scss" />
         <option value="$PROJECT_DIR$/../video-project/index.html" />
-        <option value="$PROJECT_DIR$/js/jsmain.js" />
-        <option value="$PROJECT_DIR$/scss/_variables.scss" />
         <option value="$PROJECT_DIR$/scss/_video.scss" />
         <option value="$PROJECT_DIR$/scss/_meettheteam.scss" />
+        <option value="$PROJECT_DIR$/scss/_carousel.scss" />
+        <option value="$PROJECT_DIR$/scss/_twosections.scss" />
+        <option value="$PROJECT_DIR$/scss/_bluesection.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/jsmain.js" />
+        <option value="$PROJECT_DIR$/scss/_variables.scss" />
+        <option value="$PROJECT_DIR$/scss/_buttons.scss" />
+        <option value="$PROJECT_DIR$/scss/_footer.scss" />
       </list>
     </option>
   </component>
@@ -340,7 +337,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.jsmain.js">
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+    <configuration name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Connections/index.html">
+      <method v="2" />
+    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/video-project/index.html">
       <method v="2" />
     </configuration>
@@ -350,9 +350,11 @@
     <list>
       <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="Node.js.jsmain.js" />
+      <item itemvalue="JavaScript Debug.index.html (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="Node.js.jsmain.js" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
@@ -376,12 +378,12 @@
       <workItem from="1541606648984" duration="39883000" />
       <workItem from="1542015103874" duration="102757000" />
       <workItem from="1542619596313" duration="50577000" />
-      <workItem from="1542794642355" duration="14201000" />
+      <workItem from="1542794642355" duration="20864000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="303856000" />
+    <option name="totallyTimeSpent" value="310519000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1016" extended-state="6" />
@@ -475,38 +477,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_carousel.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="98" column="8" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_buttons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="40" column="19" lean-forward="true" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_twosections.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-909">
-          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_textvideo.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
           <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1737">
-          <caret line="59" column="18" lean-forward="true" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -572,24 +546,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jsmain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_bluesection.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="84" selection-start-line="84" selection-end-line="84" selection-end-column="13" />
+        <state relative-caret-position="414">
+          <caret line="111" column="21" lean-forward="true" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_variables.scss">
+    <entry file="file://$PROJECT_DIR$/scss/_meettheteam.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        <state relative-caret-position="203">
+          <caret line="152" column="30" lean-forward="true" selection-start-line="152" selection-start-column="30" selection-end-line="152" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_carousel.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="123" column="3" lean-forward="true" selection-start-line="123" selection-start-column="3" selection-end-line="123" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -600,22 +574,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_meettheteam.scss">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="150" column="32" selection-start-line="150" selection-start-column="32" selection-end-line="150" selection-end-column="32" />
+        <state relative-caret-position="549">
+          <caret line="494" column="9" selection-start-line="494" selection-start-column="9" selection-end-line="494" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/jsmain.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="409" column="98" selection-start-line="409" selection-start-column="98" selection-end-line="409" selection-end-column="98" />
-          <caret line="415" column="98" selection-start-line="415" selection-start-column="98" selection-end-line="415" selection-end-column="98" />
-          <caret line="421" column="98" selection-start-line="421" selection-start-column="98" selection-end-line="421" selection-end-column="98" />
-          <caret line="427" column="98" selection-start-line="427" selection-start-column="98" selection-end-line="427" selection-end-column="98" />
-          <caret line="433" column="98" selection-start-line="433" selection-start-column="98" selection-end-line="433" selection-end-column="98" />
-          <caret line="439" column="98" selection-start-line="439" selection-start-column="98" selection-end-line="439" selection-end-column="98" />
+        <state relative-caret-position="494">
+          <caret line="182" column="24" lean-forward="true" selection-start-line="182" selection-start-column="24" selection-end-line="182" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_twosections.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="151" column="20" lean-forward="true" selection-start-line="151" selection-start-column="20" selection-end-line="151" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_buttons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="131" column="27" selection-start-line="131" selection-start-column="27" selection-end-line="131" selection-end-column="27" />
         </state>
       </provider>
     </entry>

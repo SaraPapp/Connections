@@ -170,6 +170,24 @@ $(document).ready(function () {
     });
 });
 
+// Go to top button
+
+$(function(){
+    //Scroll event
+    $(window).scroll(function(){
+        var scrolled = $(window).scrollTop();
+        if (scrolled > 200) $('.go-top').fadeIn('slow');
+        if (scrolled < 200) $('.go-top').fadeOut('slow');
+    });
+    //Click event
+    $('.go-top').hide();
+    $('.go-top').click(function () {
+        $("html, body").animate({ scrollTop: "0" },  500);
+    });
+});
+
+// Detect mobile
+
 function detectMobile() {
     if ((/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()))) {
         $("main").addClass("mobile");

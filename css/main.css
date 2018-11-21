@@ -177,34 +177,13 @@
 .slick-arrow.slick-hidden {
   display: none; }
 
-/*.lm-button {
-  text-align: center;
-  width: 230px;
-  line-height: 57px;
-  border-radius: 32px;
-  box-shadow: 0 13px 35px 0 rgba(0, 0, 0, 0.26);
-  background-color: $button-hover-brown;
-  opacity: 0;
-  height: 0;
-  a {
-    text-decoration: none;
-    width: 201px;
-    height: 29px;
-    font-family: $fontfamily-poppins;
-    font-size: 1.125em;
-    font-weight: 500;
-    text-align: center;
-    color: #ffffff;
-  }
-  &.js-height {
-    height: auto !important;
-  }
-}*/
 .learn-more-btn {
   max-width: 200px;
   width: 100%;
   border-radius: 22.5px;
-  border: solid 2px #cccccc; }
+  border: solid 2px #cccccc;
+  transition: all .25s;
+  background-color: rgba(190, 162, 108, 0); }
   .learn-more-btn a {
     text-decoration: none;
     position: relative;
@@ -420,41 +399,81 @@
       .footer .right-section .socialmedia a:hover .youtube {
         background-image: url("../img/socialmedia/youtube-hover@3x.png"); }
 
+main .go-top-container {
+  position: fixed;
+  z-index: 50;
+  bottom: 137px;
+  height: 46px;
+  left: 0;
+  right: 0;
+  margin: 0 auto; }
+  main .go-top-container .go-top {
+    position: absolute;
+    z-index: 50;
+    right: -60px;
+    display: none;
+    width: 46px;
+    height: 46px;
+    background: url("../img/buttons/back-to-top@3x.png") no-repeat;
+    background-size: cover;
+    transition: all .25s;
+    -webkit-box-shadow: 0px 5px 31px -1px transparent;
+    -moz-box-shadow: 0px 5px 31px -1px transparent;
+    box-shadow: 0px 5px 31px -1px transparent;
+    border-radius: 50%; }
+    main .go-top-container .go-top:hover {
+      background: url("../img/buttons/back-to-top-hover@3x.png") no-repeat;
+      background-size: cover;
+      cursor: pointer;
+      -webkit-box-shadow: 0px 5px 31px -1px rgba(0, 0, 0, 0.35);
+      -moz-box-shadow: 0px 5px 31px -1px rgba(0, 0, 0, 0.35);
+      box-shadow: 0px 5px 31px -1px rgba(0, 0, 0, 0.35); }
+  @media (min-width: 1025px) {
+    main .go-top-container .go-top {
+      display: block; } }
+  @media (min-width: 1300px) and (max-width: 1480px) {
+    main .go-top-container .go-top {
+      right: 30px; } }
+  main .go-top-container.mobile .go-top {
+    display: none !important; }
+
 @media (min-width: 1300px) {
   .footer {
     padding: 109px 135px 0 145px;
     margin: 0 auto;
     display: block; }
-    .footer .logo,
-    .footer .middle-text,
-    .footer .right-section {
+    .footer .footer-container {
       display: inline-block; }
-    .footer .logo {
-      margin-right: 4%; }
-      .footer .logo .copyright {
-        font-size: 0.865em; }
-    .footer .middle-text {
-      max-width: calc(100% - 767px);
-      width: 100%;
-      text-align: left;
-      font-size: 0.865em;
-      vertical-align: top;
-      margin-top: 20px; }
-    .footer .right-section {
-      float: right; }
-      .footer .right-section .policylinks {
-        padding: 20px 0;
-        max-width: 400px;
-        width: 100%; }
-        .footer .right-section .policylinks a {
-          padding: 0 10px;
+      .footer .footer-container .logo,
+      .footer .footer-container .middle-text,
+      .footer .footer-container .right-section {
+        display: inline-block; }
+      .footer .footer-container .logo {
+        margin-right: 4%; }
+        .footer .footer-container .logo .copyright {
           font-size: 0.865em; }
-        .footer .right-section .policylinks a:hover {
-          color: #bea26c !important;
-          cursor: pointer; }
-      .footer .right-section .footer-socialmedia {
+      .footer .footer-container .middle-text {
+        max-width: calc(100% - 767px);
         width: 100%;
-        float: right; } }
+        text-align: left;
+        font-size: 0.865em;
+        vertical-align: top;
+        margin-top: 20px; }
+      .footer .footer-container .right-section {
+        float: right; }
+        .footer .footer-container .right-section .policylinks {
+          padding: 20px 0;
+          max-width: 400px;
+          width: 100%; }
+          .footer .footer-container .right-section .policylinks a {
+            padding: 0 10px;
+            font-size: 0.865em; }
+          .footer .footer-container .right-section .policylinks a:hover {
+            color: #bea26c !important;
+            cursor: pointer; }
+        .footer .footer-container .right-section .footer-socialmedia {
+          width: 100%;
+          float: right; } }
 .duo-container {
   width: 100%;
   display: block;
@@ -1086,8 +1105,8 @@ main.mobile .carousel-container .tab .tab-container {
   main.mobile .carousel-container .tab .tab-container .tab-text,
   main.mobile .carousel-container .tab .tab-container .learn-more-btn {
     text-align: center;
-    height: auto;
-    opacity: 1;
+    height: auto !important;
+    opacity: 1 !important;
     margin: 20px auto; }
 
 .slick-dotted.slick-slider {

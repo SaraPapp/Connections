@@ -2,7 +2,8 @@
 // variables
 $fontfamily-poppins: 'Poppins', sans-serif;
 $fontfamily-hind: 'Hind', sans-serif;
-$button-hover-brown: #bea26c;
+$button-hover-brown: rgba(190, 162, 108, 1);
+$button-hover-brown-transparent: rgba(190, 162, 108, 0);
 $grey-text-colour: #6e6e6e;
 $black-text-colour: #000000;
 $darkgrey-email-colour: #4b4b4b;
@@ -25,3 +26,4 @@ $screen-xl-min: 1300px; // Large tablets and desktops
 @mixin md-lg {@media(min-width: #{$screen-lg-min}) and (max-width:1048px){@content;}}
 @mixin lg { @media (min-width: #{$screen-lg-min}) {@content;} } // Large devices
 @mixin xl { @media (min-width: #{$screen-xl-min}) {@content;} } // Extra large devices
+@mixin xxl {@media (min-width:1300px) and (max-width: 1480px){@content;}}

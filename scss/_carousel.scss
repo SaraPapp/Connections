@@ -116,8 +116,8 @@ main.mobile .carousel-container {
       .tab-text,
       .learn-more-btn {
         text-align: center;
-        height: auto;
-        opacity: 1;
+        height: auto !important;
+        opacity: 1 !important;
         margin: 20px auto;
       }
     }
