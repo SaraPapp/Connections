@@ -138,7 +138,11 @@ $(document).ready(function () {
         $(this).parents('.name').addClass('focus');
         $('.one-time').slick('slickGoTo', index);
         setTimeout(function () {
-            $(target).css({'position': 'absolute', 'left': '0'})
+            $(target).css({'position': 'absolute', 'left': '0', 'opacity':0});
+
+            setTimeout(function () {
+                $(target).animate({'opacity': '1'},350);
+            },150);
         }, 300);
     });
 
@@ -172,9 +176,9 @@ $(document).ready(function () {
 
 // Go to top button
 
-$(function(){
+$(function () {
     //Scroll event
-    $(window).scroll(function(){
+    $(window).scroll(function () {
         var scrolled = $(window).scrollTop();
         if (scrolled > 200) $('.go-top').fadeIn('slow');
         if (scrolled < 200) $('.go-top').fadeOut('slow');
@@ -182,7 +186,7 @@ $(function(){
     //Click event
     $('.go-top').hide();
     $('.go-top').click(function () {
-        $("html, body").animate({ scrollTop: "0" },  500);
+        $("html, body").animate({scrollTop: "0"}, 500);
     });
 });
 
