@@ -137,13 +137,15 @@ $(document).ready(function () {
         $('.names .name.focus').removeClass('focus');
         $(this).parents('.name').addClass('focus');
         $('.one-time').slick('slickGoTo', index);
-        setTimeout(function () {
-            $(target).css({'position': 'absolute', 'left': '0', 'opacity':0});
-
+        if (index > 0) {
             setTimeout(function () {
-                $(target).animate({'opacity': '1'},350);
-            },150);
-        }, 300);
+                $(target).css({'position': 'absolute', 'left': '0', 'opacity': 0});
+
+                setTimeout(function () {
+                    $(target).animate({'opacity': '1'}, 350);
+                }, 150);
+            }, 300);
+        }
     });
 
     // Transforms names list into a slider
