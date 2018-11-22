@@ -1,0 +1,63 @@
+.testimonials {
+  padding: 20px 0;
+  background-color: #f9f9f9;
+  .personal-test {
+    max-width: 100%;
+    width: 100%;
+    background-image: url("../img/personalintro/quotations@3x.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center center;
+    .test-container .testimonials-title {
+      display: none;
+    }
+    .testimonials-title {
+      display: block;
+      max-width: 330px;
+      margin: 0 auto;
+      h3 {
+        text-align: center;
+        display: block;
+        width: 330px;
+        font-weight: 700;
+        font-family: $fontfamily-poppins;
+        font-size: 2em;
+        line-height: 1.46;
+        color: $black-text-colour;
+      }
+    }
+    .testimonials-text {
+      p {
+        padding: 20px 3%;
+        display: block;
+        text-align: center;
+        max-width: 645px;
+        width: 100%;
+        font-family: $fontfamily-hind;
+        font-size: 1em;
+        line-height: 1.73;
+        color: $grey-text-colour;
+      }
+    }
+  }
+  .test-slider {
+    max-width: 350px;
+    width: 100%;
+    .test-slide {
+      display: block;
+      .test-slide-img {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        img {
+          border-radius: 50%;
+          width: 100%;
+        }
+        .test-details {
+          width: 200px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

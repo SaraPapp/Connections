@@ -615,80 +615,102 @@ main .go-top-container {
 header {
   width: 100%;
   position: absolute;
-  top: 26px;
   z-index: 6;
   display: block; }
-  header .header .connections-logo {
-    position: absolute;
-    display: block;
-    width: 197px;
-    left: 5%; }
-    header .header .connections-logo img {
-      width: 100%; }
-    @media (min-width: 768px) {
-      header .header .connections-logo {
-        left: calc(50% - 98.5px); } }
-    @media (min-width: 768px) and (max-width: 938px) {
-      header .header .connections-logo {
-        left: 5%; } }
-  header .header .menu-right {
-    float: right;
-    margin-right: 5%; }
-    header .header .menu-right .login {
-      position: relative;
-      display: none;
-      float: left;
-      width: 210px;
-      height: 40px;
-      border-radius: 20px;
-      border: solid 0.5px rgba(255, 255, 255, 0.5);
-      margin-right: 60px; }
-      header .header .menu-right .login a {
-        text-decoration: none;
-        display: inline-block;
-        font-family: "Poppins", sans-serif;
-        font-size: 0.875em;
-        font-weight: 600;
-        text-align: center;
-        line-height: 39px;
-        color: #ffffff; }
-        header .header .menu-right .login a.login-text {
-          padding: 0 16px 0 20px;
-          border-right: 1px solid rgba(255, 255, 255, 0.5); }
-        header .header .menu-right .login a.apply {
-          padding-left: 17px; }
-      @media (min-width: 768px) {
-        header .header .menu-right .login {
-          display: inline-block; } }
-    header .header .menu-right .menu {
-      padding-top: 9px;
+  header .header {
+    padding-top: 26px; }
+    header .header .connections-logo {
+      position: absolute;
       display: block;
-      float: left;
-      -moz-transform: scale(-1, 1);
-      -webkit-transform: scale(-1, 1);
-      -o-transform: scale(-1, 1);
-      -ms-transform: scale(-1, 1);
-      transform: scale(-1, 1); }
-      header .header .menu-right .menu svg#menu-icon {
-        width: 30px; }
-      header .header .menu-right .menu svg#menu-icon #top,
-      header .header .menu-right .menu svg#menu-icon #middle,
-      header .header .menu-right .menu svg#menu-icon #bottom {
-        transition: 0.25s ease; }
-      header .header .menu-right .menu #menu-icon:hover #middle {
-        transform: scale(2, 1); }
-      header .header .menu-right .menu #menu-icon:hover #bottom {
-        transform: scale(2, 1); }
-      header .header .menu-right .menu #menu-icon:active #top,
-      header .header .menu-right .menu #menu-icon:active #middle,
-      header .header .menu-right .menu #menu-icon:active #bottom {
-        transform: scale(0, 1);
-        transition-timing-function: cubic-bezier(2s, 0, 0.25, 1);
-        stroke-linecap: round; }
-      header .header .menu-right .menu #menu-icon line {
-        stroke: #fff;
-        stroke-width: 2;
-        stroke-linecap: round; }
+      width: 197px;
+      left: 5%; }
+      header .header .connections-logo.white {
+        display: block; }
+      header .header .connections-logo.black {
+        display: none; }
+      header .header .connections-logo img {
+        width: 100%; }
+      @media (min-width: 768px) {
+        header .header .connections-logo {
+          left: calc(50% - 98.5px); } }
+      @media (min-width: 768px) and (max-width: 938px) {
+        header .header .connections-logo {
+          left: 5%; } }
+    header .header .menu-right {
+      float: right;
+      margin-right: 5%; }
+      header .header .menu-right .login {
+        position: relative;
+        display: none;
+        float: left;
+        width: 210px;
+        height: 40px;
+        border-radius: 20px;
+        border: solid 0.5px rgba(255, 255, 255, 0.5);
+        margin-right: 60px; }
+        header .header .menu-right .login a {
+          text-decoration: none;
+          display: inline-block;
+          font-family: "Poppins", sans-serif;
+          font-size: 0.875em;
+          font-weight: 600;
+          text-align: center;
+          line-height: 39px;
+          color: #ffffff; }
+          header .header .menu-right .login a.login-text {
+            padding: 0 16px 0 20px;
+            border-right: 1px solid rgba(255, 255, 255, 0.5); }
+          header .header .menu-right .login a.apply {
+            padding-left: 17px; }
+        @media (min-width: 768px) {
+          header .header .menu-right .login {
+            display: inline-block; } }
+      header .header .menu-right .menu {
+        padding-top: 9px;
+        display: block;
+        float: left;
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1); }
+        header .header .menu-right .menu svg#menu-icon {
+          width: 30px; }
+        header .header .menu-right .menu svg#menu-icon #top,
+        header .header .menu-right .menu svg#menu-icon #middle,
+        header .header .menu-right .menu svg#menu-icon #bottom {
+          transition: 0.25s ease; }
+        header .header .menu-right .menu #menu-icon:hover #middle {
+          transform: scale(2, 1); }
+        header .header .menu-right .menu #menu-icon:hover #bottom {
+          transform: scale(2, 1); }
+        header .header .menu-right .menu #menu-icon:active #top,
+        header .header .menu-right .menu #menu-icon:active #middle,
+        header .header .menu-right .menu #menu-icon:active #bottom {
+          transform: scale(0, 1);
+          transition-timing-function: cubic-bezier(2s, 0, 0.25, 1);
+          stroke-linecap: round; }
+        header .header .menu-right .menu #menu-icon line {
+          stroke: #fff;
+          stroke-width: 2;
+          stroke-linecap: round; }
+  header.white {
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    height: 100px; }
+    header.white .connections-logo.white {
+      display: none; }
+    header.white .connections-logo.black {
+      display: block; }
+    header.white .menu-right .login {
+      border: solid 0.5px rgba(0, 0, 0, 0.5); }
+      header.white .menu-right .login a {
+        color: black; }
+        header.white .menu-right .login a.login-text {
+          border-right: 1px solid rgba(0, 0, 0, 0.5); }
+    header.white .menu-right .menu #menu-icon line {
+      stroke: black; }
 
 .viewport-height {
   min-height: 100vh; }
@@ -940,6 +962,8 @@ header {
         background-color: white; }
       .video-container .vert-line div.black {
         background-color: black; }
+  .video-container.normal-page-banner {
+    height: 640px; }
 
 .modal-video {
   background-color: rgba(0, 0, 0, 0.95); }
@@ -1476,6 +1500,108 @@ main.mobile .carousel-container .tab .tab-container {
       width: 100%; }
       .black-section .black-section-content .black-section-arrow img {
         width: 100%; }
+
+.personalintro-intro-container {
+  width: 100%;
+  padding-bottom: 30px; }
+  .personalintro-intro-container .personalintro-intro-wrapper .white-section .white-section-text {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 2% 100px 2%; }
+    .personalintro-intro-container .personalintro-intro-wrapper .white-section .white-section-text h3,
+    .personalintro-intro-container .personalintro-intro-wrapper .white-section .white-section-text p {
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      max-width: 426px;
+      line-height: 1.58; }
+    .personalintro-intro-container .personalintro-intro-wrapper .white-section .white-section-text h3 {
+      width: 100%;
+      padding-bottom: 30px;
+      font-weight: 700;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.5em;
+      color: #000000;
+      text-align: center; }
+    .personalintro-intro-container .personalintro-intro-wrapper .white-section .white-section-text p {
+      width: 100%;
+      font-family: "Hind", sans-serif;
+      font-size: 1em;
+      font-weight: 300;
+      color: #6e6e6e; }
+  .personalintro-intro-container .personalintro-intro-wrapper .black-section {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #212121; }
+    .personalintro-intro-container .personalintro-intro-wrapper .black-section .intro-image {
+      padding: 0 5%;
+      top: -50px;
+      position: absolute;
+      max-width: 1081px;
+      height: auto; }
+      .personalintro-intro-container .personalintro-intro-wrapper .black-section .intro-image img {
+        width: 100%; }
+
+.video-container .content .subtitle {
+  max-width: 1081px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  line-height: 1.58;
+  text-align: center;
+  color: #ffffff; }
+
+.testimonials {
+  padding: 20px 0;
+  background-color: #f9f9f9; }
+  .testimonials .personal-test {
+    max-width: 100%;
+    width: 100%;
+    background-image: url("../img/personalintro/quotations@3x.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center center; }
+    .testimonials .personal-test .test-container .testimonials-title {
+      display: none; }
+    .testimonials .personal-test .testimonials-title {
+      display: block;
+      max-width: 330px;
+      margin: 0 auto; }
+      .testimonials .personal-test .testimonials-title h3 {
+        text-align: center;
+        display: block;
+        width: 330px;
+        font-weight: 700;
+        font-family: "Poppins", sans-serif;
+        font-size: 2em;
+        line-height: 1.46;
+        color: #000000; }
+    .testimonials .personal-test .testimonials-text p {
+      padding: 20px 3%;
+      display: block;
+      text-align: center;
+      max-width: 645px;
+      width: 100%;
+      font-family: "Hind", sans-serif;
+      font-size: 1em;
+      line-height: 1.73;
+      color: #6e6e6e; }
+  .testimonials .test-slider {
+    max-width: 350px;
+    width: 100%; }
+    .testimonials .test-slider .test-slide {
+      display: block; }
+      .testimonials .test-slider .test-slide .test-slide-img {
+        display: inline-block;
+        width: 60px;
+        height: 60px; }
+        .testimonials .test-slider .test-slide .test-slide-img img {
+          border-radius: 50%;
+          width: 100%; }
+        .testimonials .test-slider .test-slide .test-slide-img .test-details {
+          width: 200px;
+          display: inline-block; }
 
 * {
   box-sizing: border-box; }

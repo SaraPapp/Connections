@@ -2,15 +2,21 @@
 header {
   width: 100%;
   position: absolute;
-  top: 26px;
   z-index: 6;
   display: block;
   .header {
+    padding-top: 26px;
     .connections-logo {
       position: absolute;
       display: block;
       width: 197px;
       left: 5%;
+      &.white {
+        display: block;
+      }
+      &.black {
+        display: none;
+      }
       img {
         width: 100%;
       }
@@ -92,6 +98,30 @@ header {
           stroke-linecap: round;
         }
       }
+    }
+  }
+  &.white {
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    height: 100px;
+    .connections-logo.white {
+      display: none;
+    }
+    .connections-logo.black {
+      display: block;
+    }
+    .menu-right .login {
+      border: solid 0.5px rgba(0, 0, 0, 0.5);
+      a {
+        color: black;
+        &.login-text {
+          border-right: 1px solid rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+    .menu-right .menu #menu-icon line {
+      stroke: black;
     }
   }
 }
@@ -436,6 +466,9 @@ header {
       }
     }
   }
+  &.normal-page-banner {
+    height: 640px;
+  }
 }
 
 //Modal
@@ -459,7 +492,7 @@ header {
   .video-container {
     .content {
       .text {
-       padding: 40% 2% 0 2%;
+        padding: 40% 2% 0 2%;
       }
     }
   }

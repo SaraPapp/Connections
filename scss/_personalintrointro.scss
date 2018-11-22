@@ -1,0 +1,55 @@
+
+
+.personalintro-intro-container {
+  width: 100%;
+  padding-bottom: 30px;
+  .personalintro-intro-wrapper {
+    .white-section {
+      .white-section-text {
+        display: block;
+        margin: 0 auto;
+        padding: 20px 2% 100px 2%;
+        h3,
+        p {
+          margin: 0 auto;
+          display: block;
+          text-align: center;
+          max-width: 426px;
+          line-height: 1.58;
+        }
+        h3 {
+          width: 100%;
+          padding-bottom: 30px;
+          font-weight: 700;
+          font-family: $fontfamily-poppins;
+          font-size: 1.5em;
+          color: #000000;
+          text-align: center;
+        }
+        p {
+          width: 100%;
+          font-family: $fontfamily-hind;
+          font-size: 1em;
+          font-weight: 300;
+          color: #6e6e6e;
+        }
+      }
+    }
+    .black-section {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-color: $personalintro-background-colour;
+      .intro-image {
+        padding: 0 5%;
+        top: -50px;
+        position: absolute;
+        max-width: 1081px;
+        height: auto;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
