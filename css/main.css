@@ -414,20 +414,27 @@ main .go-top-container {
     display: none;
     width: 46px;
     height: 46px;
-    background: url("../img/buttons/back-to-top@3x.png") no-repeat;
-    background-size: cover;
-    transition: all .25s;
+    line-height: 46px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid grey;
     -webkit-box-shadow: 0px 5px 31px -1px transparent;
     -moz-box-shadow: 0px 5px 31px -1px transparent;
     box-shadow: 0px 5px 31px -1px transparent;
     border-radius: 50%; }
     main .go-top-container .go-top:hover {
-      background: url("../img/buttons/back-to-top-hover@3x.png") no-repeat;
-      background-size: cover;
+      border: 2px solid #bea26c;
       cursor: pointer;
+      color: #ffffff;
+      background-color: #bea26c;
       -webkit-box-shadow: 0px 5px 31px -1px rgba(0, 0, 0, 0.35);
       -moz-box-shadow: 0px 5px 31px -1px rgba(0, 0, 0, 0.35);
       box-shadow: 0px 5px 31px -1px rgba(0, 0, 0, 0.35); }
+    main .go-top-container .go-top .fa,
+    main .go-top-container .go-top .far,
+    main .go-top-container .go-top .fas {
+      padding-left: 1px; }
   @media (min-width: 1025px) {
     main .go-top-container .go-top {
       display: block; } }
